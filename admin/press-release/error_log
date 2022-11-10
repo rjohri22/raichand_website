@@ -1,0 +1,1 @@
+[12-Aug-2022 10:16:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/thevitalscience/raichandgroup.thevitalscience.com/admin/press-release/index.php on line 13

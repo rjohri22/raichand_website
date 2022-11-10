@@ -1,0 +1,45 @@
+[08-Nov-2022 23:58:01 UTC] PHP Warning:  Undefined variable $result in /home1/raichand/public_html/portal/press-release.php on line 86
+[08-Nov-2022 23:58:01 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home1/raichand/public_html/portal/press-release.php:86
+Stack trace:
+#0 /home1/raichand/public_html/portal/press-release.php(86): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/press-release.php on line 86
+[09-Nov-2022 00:02:42 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/raichand/public_html/portal/policies.php:58
+Stack trace:
+#0 /home1/raichand/public_html/portal/policies.php(58): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/policies.php on line 58
+[09-Nov-2022 00:03:29 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/raichand/public_html/portal/policies.php:58
+Stack trace:
+#0 /home1/raichand/public_html/portal/policies.php(58): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/policies.php on line 58
+[09-Nov-2022 00:03:53 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home1/raichand/public_html/portal/policies.php:58
+Stack trace:
+#0 /home1/raichand/public_html/portal/policies.php(58): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/policies.php on line 58
+[09-Nov-2022 12:36:30 UTC] PHP Parse error:  syntax error, unexpected token ">" in /home1/raichand/public_html/portal/press-release.php on line 680
+[10-Nov-2022 02:57:44 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home1/raichand/public_html/portal/press-release.php on line 110
+[10-Nov-2022 02:57:46 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home1/raichand/public_html/portal/press-release.php on line 110
+[10-Nov-2022 02:57:55 UTC] PHP Warning:  Undefined variable $result in /home1/raichand/public_html/portal/press-release.php on line 116
+[10-Nov-2022 02:57:55 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home1/raichand/public_html/portal/press-release.php:116
+Stack trace:
+#0 /home1/raichand/public_html/portal/press-release.php(116): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/press-release.php on line 116
+[10-Nov-2022 02:58:22 UTC] PHP Warning:  Undefined variable $result in /home1/raichand/public_html/portal/press-release.php on line 116
+[10-Nov-2022 02:58:22 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home1/raichand/public_html/portal/press-release.php:116
+Stack trace:
+#0 /home1/raichand/public_html/portal/press-release.php(116): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/press-release.php on line 116
+[10-Nov-2022 03:01:02 UTC] PHP Parse error:  syntax error, unexpected token ">" in /home1/raichand/public_html/portal/press-release.php on line 116
+[10-Nov-2022 03:01:40 UTC] PHP Parse error:  syntax error, unexpected token ">" in /home1/raichand/public_html/portal/press-release.php on line 116
+[10-Nov-2022 03:02:06 UTC] PHP Warning:  Undefined variable $result in /home1/raichand/public_html/portal/press-release.php on line 117
+[10-Nov-2022 03:02:06 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home1/raichand/public_html/portal/press-release.php:117
+Stack trace:
+#0 /home1/raichand/public_html/portal/press-release.php(117): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home1/raichand/public_html/portal/press-release.php on line 117
+[10-Nov-2022 03:03:15 UTC] PHP Parse error:  Unclosed '{' on line 117 in /home1/raichand/public_html/portal/press-release.php on line 678
