@@ -16,8 +16,8 @@ include '../dbcon.php';
     top: 30px !important;
 }
 </style>
-<script src="/assets/js/owl.js"></script>
-<script src="/assets/js/script.js"></script>
+<script src="../assets/js/owl.js"></script>
+<script src="../assets/js/script.js"></script>
         <?php
 // print_r($_POST); exit;
 $html = "";

@@ -361,7 +361,7 @@ include 'header.php';
             </div>
             <div class="col-lg-5">
                 <div class="wrapper-box">
-                    <img src="<?php echo constant('SITEURL');  ?>/assets/images/about/about3.png">
+                    <img src="<?php echo $site_url;  ?>/assets/images/about/about3.png">
                 </div>
             </div>
         </div>
@@ -388,12 +388,12 @@ include 'header.php';
                                             <div class="service-block-three">
                                                 <div class="inner-box">
                                                     <div class="image">
-                                                        <img src="<?php echo constant('SITEURL');  ?>/assets/images/services/incubation.jpg" alt="">
+                                                        <img src="<?php echo $site_url;  ?>/assets/images/services/incubation.jpg" alt="">
                                                         </div>
                                                     <div class="content">
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <h5>Entrepreneurship Incubation</h5>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/entrepreneurship-incubation.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/entrepreneurship-incubation.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -406,7 +406,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">Through these services, we support entrepreneurs in their transition from an early-stage....
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/entrepreneurship-incubation.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/entrepreneurship-incubation.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -418,13 +418,13 @@ include 'header.php';
                                                 <div class="inner-box">
                                                     <div class="image">
                                                         <div class="image"><img
-                                                                src="<?php echo constant('SITEURL');  ?>/assets/images/services/Digital-Transformation1.jpg" alt=""></div>
+                                                                src="<?php echo $site_url;  ?>/assets/images/services/Digital-Transformation1.jpg" alt=""></div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="icon"><span
                                                                 class="flaticon-question"></span></div>
                                                         <h5>Digital Transformation</h5>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/digital-transformation.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/digital-transformation.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -437,7 +437,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">Businesses may take use of these services in order to help them transition to a more digitally oriented future...
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/digital-transformation.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/digital-transformation.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -447,12 +447,12 @@ include 'header.php';
 
                                             <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="<?php echo constant('SITEURL');  ?>/assets/images/services/sustainble.jpg"
+                                                    <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/sustainble.jpg"
                                                             alt=""></div>
                                                     <div class="content">
                                                         <h5>Sustainable Business Model</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/sustainable-business-model.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/sustainable-business-model.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -465,7 +465,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">We help organizations in building sustainable business model. This is the best way to express the strategy ...
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/sustainable-business-model.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/sustainable-business-model.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -475,12 +475,12 @@ include 'header.php';
 
                                             <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="<?php echo constant('SITEURL');  ?>/assets/images/services/enging.jpg"
+                                                    <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/enging.jpg"
                                                             alt=""></div>
                                                     <div class="content">
                                                         <h5>Engaging Content</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/engaging-Content-Campaigns-to-drive-Continuous-Growth.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/engaging-Content-Campaigns-to-drive-Continuous-Growth.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -493,7 +493,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">Creative, technology, and data science are all combined in this our cloud-based marketing solution...
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/engaging-Content-Campaigns-to-drive-Continuous-Growth.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/engaging-Content-Campaigns-to-drive-Continuous-Growth.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -503,12 +503,12 @@ include 'header.php';
 
                                             <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="<?php echo constant('SITEURL');  ?>/assets/images/services/operations_consulting_masthead1.jpg"
+                                                    <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/operations_consulting_masthead1.jpg"
                                                             alt=""></div>
                                                     <div class="content">
                                                         <h5>Operations Consultancy</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/operations-consultancy.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/operations-consultancy.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -521,7 +521,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">he operations department serves as a vital connection between your company's long...
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/operations-consultancy.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/operations-consultancy.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -531,12 +531,12 @@ include 'header.php';
 
                                             <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="<?php echo constant('SITEURL');  ?>/assets/images/services/Financial_Resource_on.png"
+                                                    <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/Financial_Resource_on.png"
                                                             alt=""></div>
                                                     <div class="content">
                                                         <h5>Financial Resource Consultancy</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/financial-resources-consultancy.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/financial-resources-consultancy.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -549,7 +549,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">In order to better manage and grow your money and assets, single clients and small  businesses can get help ...
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/financial-resources-consultancy.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/financial-resources-consultancy.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -559,12 +559,12 @@ include 'header.php';
 
                                             <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="<?php echo constant('SITEURL');  ?>/assets/images/services/Support-Services1.jpg"
+                                                    <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/Support-Services1.jpg"
                                                             alt=""></div>
                                                     <div class="content">
                                                         <h5>Support Services</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
-                                                        <a href="<?php echo constant('SITEURL');  ?>/services/support-services.php" class="read-more-link">Read More <i
+                                                        <a href="<?php echo $site_url;  ?>/services/support-services.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
                                                     <div class="overlay-content">
@@ -577,7 +577,7 @@ include 'header.php';
                                                             <div class="outer-box">
                                                                 <div class="text">Our business support services will enable you to achieve significant cost, quality, and customer service savings...
                                                                 </div>
-                                                                <a href="<?php echo constant('SITEURL');  ?>/services/support-services.php" class="read-more-link">Read
+                                                                <a href="<?php echo $site_url;  ?>/services/support-services.php" class="read-more-link">Read
                                                                     More <i class="fa fa-caret-right"></i></a>
                                                             </div>
                                                         </div>
@@ -587,7 +587,7 @@ include 'header.php';
 
                                             <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="<?php echo constant('SITEURL');  ?>/assets/images/services/web-Development1.jpg"
+                                                    <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/web-Development1.jpg"
                                                             alt=""></div>
                                                     <div class="content">
                                                         <h5>Website Development </h5>

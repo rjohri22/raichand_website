@@ -65,7 +65,7 @@ include "dbcon.php";
 $selected = "";
 
 ?>
-<section class="page-title" style="background-image: url(<?php  echo constant('SITEURL');  ?>/assets/images/breadcrum/our-services.png);">
+<section class="page-title" style="background-image: url(<?php  echo $site_url;  ?>/assets/images/breadcrum/our-services.png);">
     <div class="auto-container">
         <div class="content-box">
             <div class="content-wrapper">
