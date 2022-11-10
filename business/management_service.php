@@ -53,7 +53,7 @@ $html = "";
         <div class="inner-box">
             <div class="image">
                 <?php //echo SITE_URL; exit;?>
-                <img src="<?php echo SITE_URL.'uploadimg/'.$row['images']; ?>" alt="">
+                <img src="<?php echo SITE_URL.'/uploadimg/'.$row['images']; ?>" alt="">
                 </div>
             <div class="content">
                 <div class="icon"><span class="flaticon-question"></span></div>
