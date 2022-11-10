@@ -1,3 +1,16 @@
+<?php session_start();
+function siteURL()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'] . '/raichand_website';
+    return $protocol . $domainName;
+}
+define('SITE_URL', siteURL());
+
+$site_url= siteURL(); 
+ 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,17 +54,17 @@
                 <div class="sidebar-body">
                     <ul class="list-unstyled components">
                          <li>
-                            <a href="/" class="">
+                            <a href="../" class="">
                                Home
                             </a>
                         </li>
                         <li>
-                            <a href="/about.php" class="">
+                            <a href="../about.php" class="">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="/services.php" class="">
+                            <a href="../services.php" class="">
                                 Our Services
                             </a>
                         </li>
@@ -62,7 +75,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/contact.php" class="">
+                            <a href="../contact.php" class="">
                                 Contact Us
                             </a>
                         </li>

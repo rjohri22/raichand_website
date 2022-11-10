@@ -1,4 +1,4 @@
-<?php include '../header.php';?>
+<?php include 'header.php';?>
 <style>
     label {
         margin-bottom: 0px;

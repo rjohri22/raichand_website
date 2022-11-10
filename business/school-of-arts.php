@@ -1,4 +1,4 @@
-<?php include '../header.php';?>
+<?php include 'header.php';?>
 <div id="raichand-tranding">
     <section class="page-title" style="background-image: url(../assets/images/breadcrum/school of arts.png);">
         <div class="auto-container">

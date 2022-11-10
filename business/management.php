@@ -1,4 +1,4 @@
-<?php include '../header.php';
+<?php include 'header.php';
 include '../dbcon.php';
 ?>
 <style>
@@ -164,10 +164,10 @@ include '../dbcon.php';
                                 <div class="auto-container">
                                     <div class="row" id="custom_html_row">
                                         
-                                        <!-- <div class="theme_carousel owl-theme owl-carousel" id="services_response"
-                                            data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "2" } , "1075":{ "items" : "3" }, "1200":{ "items" : "3" }}}'> -->
-                                            <!-- <?php //echo SITE_URL; ?> -->
-                                            <!-- <div class="service-block-three">
+                                        <div class="theme_carousel owl-theme owl-carousel" id="services_response"
+                                            data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "2" } , "1075":{ "items" : "3" }, "1200":{ "items" : "3" }}}'> 
+                                            <?php //echo SITE_URL; ?> 
+                                             <div class="service-block-three">
                                                 <div class="inner-box">
                                                     <div class="image">
                                                         <div class="image"><img
@@ -1222,9 +1222,9 @@ include '../dbcon.php';
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div> -->
+                                            </div> 
 
-                                        <!-- </div> -->
+                                    </div>
                                     </div>
                                 </div>
                             </section>

@@ -183,8 +183,19 @@ include "dbcon.php";
                 <div class="inner-box">
                     <div class="icon"><img src="assets/images/icons/icon-54.png" alt=""></div>
                     <h4>Contact</h4>
-                    <div class="text"><a href="https://api.whatsapp.com/send?phone=91708 81708&text=Hi%20There!"><i class="fa fa-phone-square"></i> +91 91708 81708</a><br><a href="mailto:business@raichandgroup.com" style="color:black"><i class="fa fa-envelope" aria-hidden="true"></i> business@raichandgroup.com</a>
-                        <br><a href="mailto:www.raichandgroup.com" style="color:black"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp; www.raichandgroup.com</a>
+                    <div class="text">
+                        
+                        <a style="color:black" href="https://wa.me/+919170881708">
+                            <img src="https://www.iconpacks.net/icons/1/free-whatsapp-icon-121-thumb.png" style="height:20px;width:20px"/>
+                            +91 91708 81708</a><br>
+                    
+                    <a href="mailto:business@raichandgroup.com" style="color:black"><i class="fa fa-envelope" aria-hidden="true"></i> business@raichandgroup.com</a>
+                    
+                        <br>
+                        <a href="https://raichandgroup.com" style="color:black"><i class="fa fa-globe"></i> www.raichandgroup.com</a>
+                        
+                        <br>
+                        <a href="https://raichandgroup.com" style="color:transparent"><i class="fa fa-globe"></i></a>
                     </div>
                 </div>
             </div>
