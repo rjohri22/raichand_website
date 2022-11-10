@@ -157,7 +157,7 @@ include '../dbcon.php';
                         <a class="nav-link" data-toggle="tab" href="#four" role="tab" aria-controls="four" aria-selected="false"> Business Restructuring </a>
                     </li> -->
                 </ul>
-                <div class="tab-content mt-3">
+                <div class="tab-content mt-3" style="">
                     <div class="tab-pane active" id="one" role="tabpanel" aria-labelledby="one-tab">
                         <div class="col-lg-12 col-md-12">
                             <section class="services-section-three" id="services">
@@ -1237,7 +1237,7 @@ include '../dbcon.php';
 </section>
 
 
-<section class="team-section-two" id="coreteam" style="background:#eceff1;">
+<section class="team-section-two" id="coreteam" style="background:#eceff1;margin-top:-200px">
     <div class="auto-container">
         <div class="sec-title text-center" style="margin-bottom:40px">
             <h2>Core Team</h2>

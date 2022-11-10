@@ -545,7 +545,7 @@
             </div>
         </div>
     </section>
-<section class="team-section-two" id="core-team" style="background:white">
+    <section class="team-section-two" id="core-team" style="background:white">
     <div class="auto-container">
         <div class="sec-title text-center" style="margin-bottom:40px">
             <h2>Core Team</h2>
@@ -602,7 +602,6 @@
         </div>
     </div>
 </section>
-
  <!--   <section id="about" class="home-section text-center">-->
  <!--       <div class="container">-->
 	<!--	<div class="heading-about">-->
