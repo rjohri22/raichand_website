@@ -1,5 +1,5 @@
 <?php
-// session_start();
+ //session_start();
 // include('header.php');
 if (isset($_POST['submit'])) {
     $unm = $_POST['username'];
