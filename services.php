@@ -319,8 +319,8 @@ $selected = "";
 
             // else{    
 
-            //     $sql = "SELECT * FROM `service` ORDER BY id Asc";
-            //     $result = mysqli_query($con, $sql);
+               $sql = "SELECT * FROM `service` ORDER BY id Asc";
+                $result = mysqli_query($con, $sql);
             // }
             if (mysqli_num_rows($result) > 0) {
                 function limit_text($text, $limit)
@@ -335,22 +335,24 @@ $selected = "";
                 }
 
                 while ($row = mysqli_fetch_assoc($result)) {
+                    
             ?>
+            
                     <div class="col-lg-4 service-block-six">
                         <div class="inner-box">
                             <div class="image-box">
-                                <img class="lazy-image owl-lazy loaded" src="../../uploadimg/<?php echo $row['images']; ?>" data-src="../../assets/images/services/Enter.jpg" alt="" data-was-processed="true">
-                                <div class="overlay">
+                                <img class="lazy-image owl-lazy loaded" style="height:300px;width:300px" src="uploadimg/<?php echo $row['images']; ?>" data-src="assets/images/services/Enter.jpg" alt="" data-was-processed="true">
+                                <div class="overlay" >
                                     <a href="services_detail/services_detail_page.php?id=<?php echo $row['id']; ?>">
                                         <span class="flaticon-right"></span>
                                     </a>
                                 </div>
                             </div>
-                            <div class="content">
-                                <h5 class="service-title">
+                            <div class="content" style="font-size:20px;;height:100px">
+                                <h5>
                                     <?php
                                     $title = $row['service_title'];
-                                    echo $newtext = wordwrap($title, 18, "<br />\n");
+                                    echo $newtext = wordwrap($title, 32, "<br />\n");
                                     ?>
                                 </h5>
                             </div>
