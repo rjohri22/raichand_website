@@ -926,7 +926,7 @@ include 'header.php';
                                             </div>
                                                   <div class="service-block-three">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src="assets/imagesservices/Economic-impact1.jpg" alt=""></div>
+                                                    <div class="image"><img src="assets/images/services/Economic-impact1.jpg" alt=""></div>
                                                     <div class="content">
                                                         <h5>Economic Impact Analysis</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
@@ -1553,12 +1553,12 @@ include 'header.php';
 </section>
 
 <!-- News Section -->
-<section class="news-section" id="livestream">
-    <div class="row">
-        <div class="col-lg-3 mt-5">
-            <img src="assets/images/background/Live+Stream.gif" />
+<section class="news-section" id="livestream" style="background-color:white">
+    <div class="row" style="background-color:white">
+        <div class="col-lg-3 " style="background-color:white">
+            <img src="assets/images/background/Live+Stream.gif"  />
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9" style="background-color:white">
             <div class="outer-box">
                 <div class="outer-container">
                     <div class="row m-0 justify-content-between align-items-end">
