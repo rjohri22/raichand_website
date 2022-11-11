@@ -224,7 +224,7 @@ $selected = "";
                 // $company = mysqli_real_escape_string($con, $_POST['company']);
                 $bname = mysqli_real_escape_string($con, $_POST['bname']);
                 // $deg = mysqli_real_escape_string($con, $_POST['deg']);
-                $serv = mysqli_real_escape_string($con, $_POST['serv']);
+                $serv = mysqli_real_escape_string($con, (isset($_POST['serv'])?$_POST['serv']:""));
                 // echo $serv; exit;
                 // unset($_SESSION['dropdown1']);
                 // unset($_SESSION['dropdown2']);
