@@ -4,7 +4,7 @@
 if (isset($_POST['submit'])) {
     $unm = $_POST['username'];
     $pass = $_POST['password'];
-    if ($unm == 'Raichand0810' && $pass = 'Modern@123') {
+    if ($unm == 'Raichand0810' && $pass == 'Modern@123') {
         $_SESSION['verify'] = 'true';
         $_SESSION['password'] = 'true';
         header('location:' . SITE_URL . 'admin');
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
                     <div class="main-hotair">
                         <div class="w3l_form align-self">
                             <div class="left_grid_info">
-                                <img src="/assets/images/1.png" alt="" class="img-fluid">
+                                <img src="assets/images/1.png" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="content-wthree">
