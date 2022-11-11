@@ -1,6 +1,6 @@
 <?php
  //session_start();
-include('header.php');
+// include('header.php');
 if (isset($_POST['submit-form'])) {
     $unm = $_POST['username'];
     $pass = $_POST['password'];
