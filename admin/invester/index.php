@@ -16,7 +16,7 @@ $result = mysqli_query($con, $sql);
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Investor</a></li>
                     </ol>
                 </div>
@@ -35,10 +35,10 @@ $result = mysqli_query($con, $sql);
                         <div class="d-flex">
                             
                         <div class="col-md-6" align="left">
-                            <a href="cindex.php"><button type="button" class="btn btn-primary btn-sm">CREATE</button></a>
+                            <a href="cindex.php"><button type="button" class="btn btn-dark">CREATE</button></a>
                         </div>
                         <div class="col-md-6" align="right">
-                            <a href="invester.php"><button type="button" class="btn btn-primary btn-sm">ADD</button></a>
+                            <a href="invester.php"><button type="button" class="btn btn-dark">ADD</button></a>
                         </div>
                         </div>
                     </div>
