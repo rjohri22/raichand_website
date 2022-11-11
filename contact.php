@@ -235,7 +235,7 @@ include "dbcon.php";
             </div>
             <div class="col-lg-8">
 
-                <form method="post" action="/api/contact_us.php" class="contact-form">
+                <form method="post" action="api/contact_us.php" class="contact-form">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="anonymous" onclick="checkme()">
                         <label class="form-check-label" for="flexCheckDefault" style="font-size:18px;margin-left:15px;">
@@ -247,12 +247,12 @@ include "dbcon.php";
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 form-group">
                                     <label>Name <span class="text-red">*</span></label>
-                                    <input type="text" name="name" placeholder="Enter Name" id="name" required="" />
+                                    <input type="text" name="name" placeholder="Provide Your Full Name"id="name" required="" />
                                 </div>
                                 <div class="col-lg-6 col-md-6 form-group">
                                     <label>Email <span class="text-red">*</span></label>
                                     <!-- <input type="text" name="email" id="email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required> -->
-                                    <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="email" />
+                                    <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="email" placeholder="Provide Your Work Email"/>
                                     <!-- <input type="email" name="email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="Enter Email Address" id="email" required=""> -->
                                     <!-- <input class="form-control" placeholder="Enter Email Address" 
                                             type="email"  name="email" id="email" 
@@ -277,7 +277,7 @@ include "dbcon.php";
                                     oninput="javascript: if (this.value.length <= this.minLength) this.value = this.value.slice(10, this.minLength);"                                     
                                     type = "number" maxlength = "10" minlength="10" /> -->
                                     
-                                    <input type="text" placeholder="Enter number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" name="mobile" pattern="[1-9]{1}[0-9]{9}" id="mobile" required="" class="mobile" maxLength="10" minlength="10">
+                                    <input type="text" placeholder="Provide Your Calling Number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" name="mobile" pattern="[1-9]{1}[0-9]{9}" id="mobile" required="" class="mobile" maxLength="10" minlength="10">
                                     <!-- <input type="number" placeholder="Enter number" name="mobile" id="mobile" required="" class="mobile" onKeyPress="if(this.value.length==10) return false;" > -->
                                 </div>
                                 <input type="hidden" name="hidden_mobile" id="hidden_mobile" class="mobile">
@@ -286,20 +286,20 @@ include "dbcon.php";
                                 <!-- </div> -->
                                 <div class="col-lg-6 col-md-6 form-group">
                                     <label>Company <span class="text-red">*</span></label>
-                                    <input type="text" name="company" placeholder="Enter Company Name" id="company" required="">
+                                    <input type="text" name="company" placeholder="Enter Your Company Name" id="company" required="">
                                 </div>
                                 <div class="col-lg-6 col-md-6 form-group">
                                     <label>Designation <span class="text-red">*</span></label>
-                                    <input type="text" name="deg" placeholder="Enter Designation" id="deg" required="">
+                                    <input type="text" name="deg" placeholder="Enter Your Designation" id="deg" required="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 form-group">
-                            <label for="exampleFormControlSelect1">Business Name <span class="text-red">*</span></label>
+                            <label for="exampleFormControlSelect1">Businesses Name<span class="text-red">*</span></label>
                             <select name="bname" class="form-control" id="exampleFormControlSelect1" onchange="bGroup()" required="">
-                                <option value="">Select One</option>
+                                <option value="">Select One of Our Business</option>
                                 <?php
                                 function cat($parent_id = 0, $sub_mark = '')
                                 {
@@ -348,7 +348,7 @@ include "dbcon.php";
                             <label>Services <span class="text-red">*</span></label>
                             <select name="serv" class="form-control" id="exampleFormControlSelect2" required="">
 
-                                <option value="">Select Services</option>
+                                <option value="">Select One of Our Service</option>
                                 <!-- <option value="">Select One</option>
                                     <option>Digital Transformation</option>
                                     <option>Sustainable Business Model</option>
@@ -391,9 +391,9 @@ include "dbcon.php";
                         </div>
 
                         <div class="col-lg-12 col-md-6 form-group">
-                            <label>Countries <span class="text-red">*</span></label>
+                            <label>Our Presence  <span class="text-red">*</span></label>
                             <select name="cont" class="form-control" id="exampleFormControlSelect3" required="">
-                                <option value="">Select from our presence</option>
+                                <option value="">Select Country</option>
                                 <?php
                                 include('country.php');
                                 for ($i = 0; $i < count($cname); $i++) {
