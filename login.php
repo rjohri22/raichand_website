@@ -4,8 +4,7 @@ include('header.php');
 if (isset($_POST['submit-form'])) {
     $unm = $_POST['username'];
     $pass = $_POST['password'];
-    if ($unm == 'Raichand0810' && $pass = 'Modern@123') {
-  
+    if ($unm == 'Raichand0810' && $pass == 'Modern@123') {
         $_SESSION['verify'] = 'true';
         $_SESSION['password'] = 'true';
         header('location:' . SITE_URL . '/admin');
@@ -61,7 +60,11 @@ if (isset($_POST['submit-form'])) {
                     <div class="main-hotair">
                         <div class="w3l_form align-self">
                             <div class="left_grid_info">
+<<<<<<< HEAD
                                 <img src="<?php echo SITE_URL; ?>/assets/images/1.png" alt="" class="img-fluid">
+=======
+                                <img src="assets/images/1.png" alt="" class="img-fluid">
+>>>>>>> 904169ede1fce8c41ea6d7594b2d2baa05bcc3ed
                             </div>
                         </div>
                         <div class="content-wthree">
