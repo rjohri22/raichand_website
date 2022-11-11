@@ -69,7 +69,7 @@ if($query->num_rows > 0){
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                      <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                      <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Press Release</a></li>
                     </ol>
                 </div>
@@ -142,7 +142,7 @@ if($query->num_rows > 0){
 
                             <div class="form-group mb-4">
                                 <div class="col-sm-12">
-                                    <input type="submit" class="btn btn-success" name="submit"
+                                    <input type="submit" class="btn btn-warning" name="submit"
                                         value="submit"></input>
                                     <!-- <button class="btn btn-success">Update Profile</button> -->
                                 </div>

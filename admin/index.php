@@ -58,7 +58,7 @@ if (!isset($_SESSION['verify'])) { ?>
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin6">
-                    <a class="navbar-brand" href="SITE_URL/admin/">
+                    <a class="navbar-brand" href="<?php echo SITE_URL; ?>/admin/">
                         <span class="logo-text">
                             <!-- dark Logo text -->
                             <center><img src="plugins/images/logo-text.png" alt="homepage" style="height:50px" /></center>
@@ -207,7 +207,8 @@ if (!isset($_SESSION['verify'])) { ?>
                                     <div class="card">
                                         <div class="card-body bg-warning">
                                             <h3>FAQ</h3>
-                                            <img src="https://onetech.jp/frontend/img/faq/faq-icon.png" />
+                                            <br>
+                                            <img src="https://cdn-icons-png.flaticon.com/512/651/651009.png" />
                                         </div>
                                     </div>
                                 </a>
@@ -219,6 +220,7 @@ if (!isset($_SESSION['verify'])) { ?>
                                     <div class="card">
                                         <div class="card-body bg-warning">
                                             <h3>Policies</h3>
+                                            <br>
                                             <img src="https://cdn8.bigcommerce.com/s-7m4ahgmq/product_images/uploaded_images/policy.png" />
                                         </div>
                                     </div>
@@ -231,6 +233,7 @@ if (!isset($_SESSION['verify'])) { ?>
                                     <div class="card">
                                         <div class="card-body bg-warning">
                                             <h3>Invester</h3>
+                                            <br>
                                             <img src="https://cdn3.iconfinder.com/data/icons/entrepreneur-and-business-startup/360/startup-founder-008-256.png" />
                                         </div>
                                     </div>
@@ -245,6 +248,7 @@ if (!isset($_SESSION['verify'])) { ?>
                                     <div class="card">
                                         <div class="card-body bg-warning">
                                             <h3>ContactUs </h3>
+                                            <br>
                                             <img src="https://icon-library.com/images/contact-us-icon-png/contact-us-icon-png-1.jpg" />
                                         </div>
                                     </div>
@@ -257,6 +261,7 @@ if (!isset($_SESSION['verify'])) { ?>
                                     <div class="card">
                                         <div class="card-body bg-warning">
                                             <h3>NewsLetters</h3>
+                                            <br>
                                             <img src="https://cdn-icons-png.flaticon.com/512/2614/2614906.png" />
                                         </div>
                                     </div>
@@ -281,6 +286,7 @@ if (!isset($_SESSION['verify'])) { ?>
                                     <div class="card">
                                         <div class="card-body bg-warning">
                                             <h3>Job Seeker</h3>
+                                            <br>
                                             <img src="https://www.pngkey.com/png/full/517-5173026_job-icon-png-job-position-icon.png" />
                                         </div>
                                     </div>
