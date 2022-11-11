@@ -14,7 +14,7 @@ $result = mysqli_query($con, $sql);
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Contact</a></li>
                     </ol>
                 </div>
@@ -31,7 +31,7 @@ $result = mysqli_query($con, $sql);
 
                             <div class="float-left" align="right">
                                 <!-- <a href="export.php" class="btn btn-success" id="export_btn"> Export</a> -->
-                                <a href="export.php"><button type="button" class="btn btn-primary btn-sm" id="export_btn">Export</button></a>
+                                <a href="export.php"><button type="button" class="btn btn-dark" id="export_btn">Export</button></a>
                             </div>
                         </div>
                         <!-- <div class="col-md-6">
