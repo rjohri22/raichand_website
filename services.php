@@ -319,8 +319,8 @@ $selected = "";
 
             // else{    
 
-               $sql = "SELECT * FROM `service` ORDER BY id Asc";
-                $result = mysqli_query($con, $sql);
+            //    $sql = "SELECT * FROM `service` ORDER BY id Asc";
+            //     $result = mysqli_query($con, $sql);
             // }
             if (mysqli_num_rows($result) > 0) {
                 function limit_text($text, $limit)

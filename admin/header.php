@@ -14,13 +14,13 @@ define('SITE_URL', siteURL());
 <head>
     <meta charset="utf-8">
     <title>RAICHAND: The Raichand Group</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/css/color-3.css" rel="stylesheet">
+    <link href="<?php echo SITE_URL;  ?>/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo SITE_URL;  ?>/assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo SITE_URL;  ?>/assets/css/responsive.css" rel="stylesheet">
+    <link href="<?php echo SITE_URL;  ?>/assets/css/color-3.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon-v3.png" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon-v3.png" type="image/x-icon">
+    <link rel="icon" href="<?php echo SITE_URL;  ?>/assets/images/favicon-v3.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="assets/css/main.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +39,7 @@ define('SITE_URL', siteURL());
                     <div class="container-fluid p-0">
                         <div class="row m-0" style="display:block;">
 
-                            <img src="assets/images/logo/sidebar-logo.png" class="side-logo" style="height:78px;">
+                            <img src="<?php echo SITE_URL;  ?>/assets/images/logo/sidebar-logo.png" class="side-logo" style="height:78px;">
                             <div class="col-4 p-4 close align-self-center" id="sidebarClose">
                                 <a class="close w-100 text-center">
                                     <i class="material-icons">close</i>
@@ -131,11 +131,11 @@ define('SITE_URL', siteURL());
                 <nav id="navbarMain" class="navbar navbar-main fixed-top navbar-expand-lg bg-transparent p-0 navbar-light">
                     <div class="navbar-sidebar-menu">
                         <a id="sidebarCollapse" class="justify-content-center align-items-center d-flex">
-                            <img src="assets/images/icons/menu.svg" alt="">
+                            <img src="<?php echo SITE_URL;  ?>/assets/images/icons/menu.svg" alt="">
                         </a>
                     </div>
                     <a class="navbar-brand ml-5" href="<?php echo SITE_URL; ?>">
-                        <img src="assets/images/logo/footerlogo.png" alt="raichand Logo">
+                        <img src="<?php echo SITE_URL;  ?>/assets/images/logo/footerlogo.png" alt="raichand Logo">
                     </a>
                     <div class="container-fluid">
                         <ul class="navbar-nav ml-auto">

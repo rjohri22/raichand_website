@@ -1,16 +1,17 @@
 <?php
  //session_start();
-// include('header.php');
-if (isset($_POST['submit'])) {
+include('header.php');
+if (isset($_POST['submit-form'])) {
     $unm = $_POST['username'];
     $pass = $_POST['password'];
     if ($unm == 'Raichand0810' && $pass = 'Modern@123') {
+  
         $_SESSION['verify'] = 'true';
         $_SESSION['password'] = 'true';
-        header('location:' . SITE_URL . 'admin');
+        header('location:' . SITE_URL . '/admin');
 ?>
         <?php
-        echo "<script>window.location.href='".SITE_URL."admin';</script>";
+        echo "<script>window.location.href='".SITE_URL."/admin';</script>";
         exit;
         ?>
 <?php
@@ -30,10 +31,10 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
     <!--/Style-CSS -->
-    <link rel="stylesheet" href="assets/css/login.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/login.css" type="text/css" media="all" />
     <!--//Style-CSS -->
 
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/css/font-awesome.min.css" type="text/css" media="all">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -60,7 +61,7 @@ if (isset($_POST['submit'])) {
                     <div class="main-hotair">
                         <div class="w3l_form align-self">
                             <div class="left_grid_info">
-                                <img src="/assets/images/1.png" alt="" class="img-fluid">
+                                <img src="<?php echo SITE_URL; ?>/assets/images/1.png" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="content-wthree">
