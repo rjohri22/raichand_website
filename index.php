@@ -450,7 +450,7 @@ include 'header.php';
                                                     <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/sustainble.jpg"
                                                             alt=""></div>
                                                     <div class="content">
-                                                        <h5>Sustainable Business Model</h5>
+                                                        <h5>Sustainable<b style="color:transparent">.</b>Business Model</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <a href="<?php echo $site_url;  ?>/services/sustainable-business-model.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
@@ -478,7 +478,7 @@ include 'header.php';
                                                     <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/enging.jpg"
                                                             alt=""></div>
                                                     <div class="content">
-                                                        <h5>Engaging Content</h5>
+                                                        <h5>Engaging<b style="color:transparent">.</b>Content Campaigns</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <a href="<?php echo $site_url;  ?>/services/engaging-Content-Campaigns-to-drive-Continuous-Growth.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
@@ -506,7 +506,7 @@ include 'header.php';
                                                     <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/operations_consulting_masthead1.jpg"
                                                             alt=""></div>
                                                     <div class="content">
-                                                        <h5>Operations Consultancy</h5>
+                                                        <h5>Operations Consultancy Services</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <a href="<?php echo $site_url;  ?>/services/operations-consultancy.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
@@ -516,7 +516,7 @@ include 'header.php';
                                                             <div class="icon-box">
                                                                 <div class="icon"><span
                                                                         class="flaticon-question"></span></div>
-                                                                <h4>Operations<br> Consultancy</h4>
+                                                                <h4>Operations Consultancy<b style="font-size:17px">Services</b></h4>
                                                             </div>
                                                             <div class="outer-box">
                                                                 <div class="text">he operations department serves as a vital connection between your company's long...
@@ -534,7 +534,7 @@ include 'header.php';
                                                     <div class="image"><img src="<?php echo $site_url;  ?>/assets/images/services/Financial_Resource_on.png"
                                                             alt=""></div>
                                                     <div class="content">
-                                                        <h5>Financial Resource Consultancy</h5>
+                                                        <h5>Financial<b style="color:transparent">.</b>Resource Consultancy</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <a href="<?php echo $site_url;  ?>/services/financial-resources-consultancy.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
@@ -703,7 +703,7 @@ include 'header.php';
                                                     <div class="image"><img src="assets/images/services/Strategydesign11.jpg" alt=""></div>
                                                     <div class="content">
                                                         <div class="icon"><span class="flaticon-career"></span></div>
-                                                        <h5>Strategy Design & Implementation </h5>
+                                                        <h5>Strategy<b style="color:transparent">.</b>Design<b style="color:transparent">.</b>& Implementation </h5>
                                                         <a href="/services/strategy-design-implementation.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
@@ -734,7 +734,7 @@ include 'header.php';
                                                     <div class="content">
                                                         <div class="icon"><span
                                                                 class="flaticon-customer-service"></span></div>
-                                                        <h5>Gather & Analyze Reliable</h5>
+                                                        <h5>Gather<b style="color:transparent">.</b>&<b style="color:transparent">.</b>Analyze Reliable</h5>
                                                         <a href="services/gather-analyze-reliable-market-data.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
                                                     </div>
@@ -928,7 +928,7 @@ include 'header.php';
                                                 <div class="inner-box">
                                                     <div class="image"><img src="assets/images/services/Economic-impact1.jpg" alt=""></div>
                                                     <div class="content">
-                                                        <h5>Economic Impact Analysis</h5>
+                                                        <h5>Economic<b style="color:transparent">.</b>Impact Analysis</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <a href="services/economic-impact-analysis.php" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>
@@ -1009,7 +1009,7 @@ include 'header.php';
                                                 <div class="inner-box">
                                                     <div class="image"><img src="assets/images/services/Time Traking1.png" alt=""></div>
                                                     <div class="content">
-                                                        <h5>Time Tracking & Estimation</h5>
+                                                        <h5>Time<b style="color:transparent">.</b>Tracking<b style="color:transparent">.</b>& Estimation</h5>
                                                         <div class="icon"><span class="flaticon-question"></span></div>
                                                         <a href="services/time-tracking-estimation.phpp" class="read-more-link">Read More <i
                                                                 class="fa fa-caret-right"></i></a>

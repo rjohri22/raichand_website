@@ -1,5 +1,5 @@
 <?php
-// session_start();
+ //session_start();
 // include('header.php');
 if (isset($_POST['submit'])) {
     $unm = $_POST['username'];
@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
                             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <input type="text" class="text" name="username" placeholder="User Name" required="" autofocus>
                                 <input type="password" class="password" name="password" placeholder="User Password" required="" autofocus>
-                              <button class="theme-btn btn-style-one mb-30" type="submit" name="submit-form" ><span class="btn-title">Logqwdqwdwq In</span></button>
+                              <button class="theme-btn btn-style-one mb-30" type="submit" name="submit-form" ><span class="btn-title">Log In</span></button>
                             </form>
 
                             <a href="forgot.php"><button>Forgot Password</button></a>
