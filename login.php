@@ -60,11 +60,7 @@ if (isset($_POST['submit-form'])) {
                     <div class="main-hotair">
                         <div class="w3l_form align-self">
                             <div class="left_grid_info">
-<<<<<<< HEAD
-                                <img src="<?php echo SITE_URL; ?>/assets/images/1.png" alt="" class="img-fluid">
-=======
                                 <img src="assets/images/1.png" alt="" class="img-fluid">
->>>>>>> 904169ede1fce8c41ea6d7594b2d2baa05bcc3ed
                             </div>
                         </div>
                         <div class="content-wthree">
