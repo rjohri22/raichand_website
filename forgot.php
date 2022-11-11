@@ -17,12 +17,13 @@
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-              <input id="email" name="email" placeholder="email address" class="form-control" type="email">
+              <input id="email" name="email" placeholder="email address" style="height:40px;width:300px;border-radius:10px" class="form-control" type="email">
             </div>
           </div>
           <div class="col-sm-3"></div>
           <div class="form-group">
-            <input name="recover-submit" id="reset_password" class="btn btn-lg btn-dark btn-block" value="Reset Password" type="submit">
+            <!-- <input name="recover-submit" id="reset_password" class="theme-btn btn-style-one mb-30" value="Reset Password" type="submit"> -->
+            <button style="border:0px;background-color:transparent" class="theme-btn btn-style-one mb-30" id="reset_password" type="submit" name="recover-submit" ><span class="btn-title">Reset Password</span></button>
           </div>
         </div>
 
