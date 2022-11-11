@@ -1,6 +1,16 @@
 <?php
- //session_start();
-// include('header.php');
+session_start();
+
+function siteURL()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'] . '/raichand_website';
+    return $protocol . $domainName;
+}
+define('SITE_URL', siteURL());
+
+ 
+
 if (isset($_POST['submit-form'])) {
     $unm = $_POST['username'];
     $pass = $_POST['password'];
@@ -10,7 +20,7 @@ if (isset($_POST['submit-form'])) {
         header('location:' . SITE_URL . '/admin');
 ?>
         <?php
-        echo "<script>window.location.href='".SITE_URL."/admin';</script>";
+        echo "<script>'".SITE_URL."/admin';</script>";
         exit;
         ?>
 <?php
@@ -30,10 +40,10 @@ if (isset($_POST['submit-form'])) {
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
     <!--/Style-CSS -->
-    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/assets/css/login.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/login.css" type="text/css" media="all" />
     <!--//Style-CSS -->
 
-    <link rel="stylesheet" href="<?php echo SITE_URL; ?>/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -67,7 +77,7 @@ if (isset($_POST['submit-form'])) {
 
                             <center><a href="https://raichandgroup.thevitalscience.com/"><img src="assets/images/black-logos.png" style="height:50px;"></a></center>
 
-                            <h2>Developer Log In</h2>
+                            <h2>Developer Log In</h2>                    
                             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <input type="text" class="text" name="username" placeholder="User Name" required="" autofocus>
                                 <input type="password" class="password" name="password" placeholder="User Password" required="" autofocus>

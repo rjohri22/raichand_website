@@ -10,7 +10,7 @@ define('SITE_URL', siteURL());
 
 if (!isset($_SESSION['verify'])) { ?>
     <?php
-    echo "<script>window.location.href='" . SITE_URL . "login.php';</script>";
+    echo "<script>window.location.href='" . SITE_URL . "/login.php';</script>";
     exit;
     ?>
 <?php } ?>
