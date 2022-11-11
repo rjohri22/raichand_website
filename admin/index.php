@@ -155,12 +155,12 @@ if (!isset($_SESSION['verify'])) { ?>
                                 <span class="hide-menu">Email Template</span>
                             </a>
                         </li>  
-                        <li class="sidebar-item">
+                        <!-- <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="career/careerindex.php" aria-expanded="false">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                 <span class="hide-menu">Career</span>
                             </a>
-                        </li>  
+                        </li>   -->
                         <!-- <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="jobcareer/jobindex.php" aria-expanded="false">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
