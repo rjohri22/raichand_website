@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="<?php echo SITE_URL; ?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Policies</a></li>
                     </ol>
                 </div>
@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
                             </div>
                             <div class="form-group mb-4">
                                 <div class="col-sm-12">
-                                    <button type="submit" name="submit" value="submit" class="btn btn-success">Submit</button>
+                                    <button type="submit" name="submit" value="submit" class="btn btn-warning">Submit</button>
                                     <!-- <button class="btn btn-success">Update Profile</button> -->
                                 </div>
                             </div>

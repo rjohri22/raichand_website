@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="https://raichandgroup.com/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Policies</a></li>
                     </ol>
                 </div>
@@ -72,9 +72,9 @@ if (isset($_POST['submit'])) {
                             <input class="form-control form-control-sm" name="uploadfile" id="formFileSm" type="file"><br>
                             <?php
                             $folder = "<?php echo SITE_URL;?>admin/policies/image/" . $rm['filename']; ?>
-                            <img src="<?= $folder; ?>" style="height:50px; margin-bottom:5px;">
+                            <!-- <img src="<?= $folder; ?>" style="height:50px; margin-bottom:5px;"> -->
                         </div>
-                        <button type="submit" name="submit" value="submit" class="btn btn-success">Update</button>
+                        <button type="submit" name="submit" value="submit" class="btn btn-warning">Update</button>
 
                         <!-- <input type="submit" class="btn btn-success" name="submit" value="submit"> -->
                     </div>

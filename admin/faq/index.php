@@ -19,7 +19,7 @@ $result = $con->query($sql);
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                         <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                         <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">FAQ</a></li>
                     </ol>
                 </div>
@@ -36,7 +36,7 @@ $result = $con->query($sql);
                             <h3 class="box-title">FAQ</h3>
                         </div>
                         <div class="col-md-6" align="right">
-                            <a href="faq.php"><button type="button" class="btn btn-primary btn-sm">ADD</button></a>
+                            <a href="faq.php"><button type="button" class="btn btn-dark">ADD</button></a>
                         </div>
                     </div>
                     <div class="table-responsive">

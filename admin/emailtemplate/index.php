@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">E-mail Template</a></li>
                     </ol>
                 </div>
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
                             <a href="cindex.php"><button type="button" class="btn btn-primary btn-sm">CREATE</button></a>
                         </div> -->
                             <div class="col-md-6" align="right" style="width: 100%;">
-                                <a href="add.php"><button type="button" class="btn btn-primary btn-sm">ADD</button></a>
+                                <a href="add.php"><button type="button" class="btn btn-dark">ADD</button></a>
                             </div>
                         </div>
                     </div>
@@ -96,9 +96,9 @@ if (isset($_POST['submit'])) {
                                                 echo "inactive";
                                             }
                                             ?>
-                                        <td><a class="btn btn-danger" onclick="return confirm('are you sure?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                                        <td><a class="btn btn-warning text-white" onclick="return confirm('are you sure?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
 
-                                            <a class="btn btn-danger" onclick="//return confirm('are you sure you wont to update?')" href="update.php?id=<?php echo $row['id']; ?>">Update</a>
+                                            <a class="btn btn-warning text-white" onclick="//return confirm('are you sure you wont to update?')" href="update.php?id=<?php echo $row['id']; ?>">Edit</a>
                                         </td>
                                     </tr>
                                 <?php  }   }  ?>

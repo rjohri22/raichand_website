@@ -56,7 +56,7 @@ if (!isset($_SESSION['verify'])) {
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin6">
-                    <a class="navbar-brand" href="<?php echo SITE_URL; ?>admin/">
+                    <a class="navbar-brand" href="<?php echo SITE_URL; ?>/admin/">
                         <span class="logo-text">
                             <!-- dark Logo text -->
                             <center><img src="../plugins/images/logo-text.png" alt="homepage" style="height:50px" /></center>
@@ -77,7 +77,7 @@ if (!isset($_SESSION['verify'])) {
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li>
-                            <a class="profile-pic" href="<?php echo SITE_URL; ?>admin/logout.php">
+                            <a class="profile-pic" href="<?php echo SITE_URL; ?>/admin/logout.php">
                                 <span class="text-white font-medium">Logout</span></a>
                         </li>
                         <!-- ============================================================== -->

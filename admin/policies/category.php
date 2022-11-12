@@ -46,7 +46,7 @@ include("../../dbcon.php");?>
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Policies</a></li>
                     </ol>
                 </div>
@@ -65,7 +65,7 @@ include("../../dbcon.php");?>
 			<label for="formFileSm" class="form-label">Upload file:</label>
   <input class="form-control form-control-sm" name="uploadfile" id="formFileSm" type="file" required><br>
 </div>
-				 <input type="submit"class="btn btn-success" name="submit" value="Submit">
+				 <input type="submit"class="btn btn-warning text-white" name="submit" value="Submit">
 				</div></div>
 		</div>
 

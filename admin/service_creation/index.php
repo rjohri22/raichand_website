@@ -25,7 +25,7 @@ $result = mysqli_query($con, $sql);
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                        <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Serive Creation</a></li>
                     </ol>
                 </div>
@@ -47,7 +47,7 @@ $result = mysqli_query($con, $sql);
                                 <a href="cindex.php"><button type="button" class="btn btn-primary btn-sm">CREATE</button></a>
                             </div> -->
                             <div class="col-md-6" align="right">
-                                <a href="service_add.php"><button type="button" class="btn btn-primary btn-sm">ADD</button></a>
+                                <a href="service_add.php"><button type="button" class="btn btn-dark">ADD</button></a>
                             </div>
                         <!-- </div> -->
                     </div>
@@ -100,8 +100,8 @@ $result = mysqli_query($con, $sql);
                                             <td>
                                             <!-- <input type="submit" class="btn btn-success" name="submit" value="submit"></input> -->
 
-                                                <a href="update.php?edit_id=<?= $row['id']; ?>" name="anajan"><button type="button" class="btn btn-success btn-sm"><i class='fas fa-edit'></i></button></a>
-                                                <a onclick="return confirm('are you sure?')" href="delete.php?delete_id=<?= $row['id']; ?>" id="<?php ?>"><button type="button" class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button></a>
+                                                <a href="update.php?edit_id=<?= $row['id']; ?>" name="anajan"><button type="button" class="btn btn-warning ">Edit</button></a>
+                                                <a onclick="return confirm('are you sure?')" href="delete.php?delete_id=<?= $row['id']; ?>" id="<?php ?>"><button type="button" class="btn btn-warning">Delete</button></a>
                                             </td>
 
 

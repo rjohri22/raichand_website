@@ -15,7 +15,7 @@ $result = mysqli_query($con, $sql);
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
-                         <li><a href="https://raichandgroup.com/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                         <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Policies</a></li>
                     </ol>
                 </div>
@@ -34,12 +34,12 @@ $result = mysqli_query($con, $sql);
                         <div class="d-flex">
                             
                         <div class="col-md-6" align="left">
-                            <a href="cindex.php"><button type="button" class="btn btn-primary btn-sm">CREATE</button></a>
+                            <a href="cindex.php"><button type="button" class="btn btn-dark">CREATE</button></a>
                         </div>
                         
                         <div class="col-md-6" align="right">
-                            <a href="policies_add_cat.php"><button type="button" class="btn btn-primary btn-sm">ADD CATEGORY</button></a>
-                            <a href="policies.php"><button type="button" class="btn btn-primary btn-sm">ADD</button></a>
+                            <a href="policies_add_cat.php"><button type="button" class="btn btn-dark">ADD CATEGORY</button></a>
+                            <a href="policies.php"><button type="button" class="btn btn-dark">ADD</button></a>
                         </div>
                         
                         </div>
@@ -64,8 +64,8 @@ $result = mysqli_query($con, $sql);
                                 <td><?php echo $counter;?></td>
                                 <!-- <td><?php //echo $row['categories'];?></td> -->
                                 <td><?php echo $row['policies_categories'];?></td>
-                                <td><a class="btn btn-info" href="policies_edit_cat.php?id=<?php echo $row['id']; ?>">Edit</a>
-                                <a class="btn btn-danger" onclick="return confirm('are you sure?')"  href="policies_delete_cat.php?id=<?php echo $row['id']; ?>">Delete</a></td></tr>
+                                <td><a class="btn btn-warning text-white" href="policies_edit_cat.php?id=<?php echo $row['id']; ?>">Edit</a>
+                                <a class="btn btn-warning text-white" onclick="return confirm('are you sure?')"  href="policies_delete_cat.php?id=<?php echo $row['id']; ?>">Delete</a></td></tr>
                             <?php
                             
                             }

@@ -14,7 +14,7 @@ include "../../dbcon.php";
                 <div class="d-md-flex">
                     <ol class="breadcrumb ms-auto">
 
-                        <li><a href="<?php echo SITE_URL; ?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                        <li><a href="<?php echo SITE_URL; ?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                         <li><a href="#" class="fw-normal">Services</a></li>
                     </ol>
                 </div>
@@ -79,7 +79,7 @@ include "../../dbcon.php";
                             </div>
                             <div class="form-group mb-4">
                                 <div class="col-sm-12">
-                                    <input type="submit" class="btn btn-success" name="submit" value="Submit"></input>
+                                    <input type="submit" class="btn btn-warning" name="submit" value="Submit"></input>
                                     <!-- <button class="btn btn-success">Update Profile</button> -->
                                 </div>
                             </div>
