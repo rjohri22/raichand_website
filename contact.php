@@ -235,7 +235,7 @@ include "dbcon.php";
             </div>
             <div class="col-lg-8">
 
-                <form method="post" action="/api/contact_us.php" class="contact-form">
+                <form method="post" action="api/contact_us.php" class="contact-form">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="anonymous" onclick="checkme()">
                         <label class="form-check-label" for="flexCheckDefault" style="font-size:18px;margin-left:15px;">
@@ -346,7 +346,7 @@ include "dbcon.php";
 
                         <div class="col-lg-6 col-md-6 form-group">
                             <label>Services <span class="text-red">*</span></label>
-                            <select name="serv" class="form-control" id="exampleFormControlSelect2" required="">
+                            <select name="serv" class="form-control" id="exampleFormControlSelect2"  >
 
                                 <option value="">Select Services</option>
                                 <!-- <option value="">Select One</option>

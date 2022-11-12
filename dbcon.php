@@ -25,3 +25,10 @@ if (!$con) {
 } else {
     // echo "Connected successfully";
 }
+
+
+define("EMAIL_USERNAME",""); 
+define("EMAIL_PASSWORD","");
+define("EMAIL_FROMMAIL","");
+define("EMAIL_FROMNAME","");
+

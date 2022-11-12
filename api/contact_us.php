@@ -1,5 +1,10 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require_once "../vendor/autoload.php"; 
 include("../dbcon.php");
 header('Content-Type: application/json; charset=utf-8');
 session_start();
@@ -53,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bname = mysqli_real_escape_string($con, $_POST['bname']);
     // echo $bname;exit;
     $deg = mysqli_real_escape_string($con, $_POST['deg']);
-    $serv = mysqli_real_escape_string($con, $_POST['serv']);
+    $serv = mysqli_real_escape_string($con, (isset($_POST['serv'])?$_POST['serv']:""));
     // echo $serv;exit;
     $cont = mysqli_real_escape_string($con, $_POST['cont']);
     $type = mysqli_real_escape_string($con, $_POST['type']);
@@ -71,9 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $body = "We received your application for the bussiness name we get back to you shortly";  //================ main content
             $headers = "";
 
-            $email1 = "anjanarajput201299@gmail.com";          // ================ recever mail 
+            // $email1 = "anjanarajput201299@gmail.com";          // ================ recever mail 
             // print_r($email);exit;
-            $subject1 = "Simple Email Test via PHP"; // ========================= subject 
+            $subject1 = "Contact Us Form Submitted"; // ========================= subject 
             $body1 = "Name : $name
                       Email: $email
                       Mobile: $mobile
@@ -105,22 +110,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // }
 
 
-            if (mail($email, $subject, $body, $headers)) {
-                if(mail($email1, $subject1, $body1, $headers1)){
-                    // echo "Email successfully sent to...";
-                    header("location: /contact.php?status=success");
+            // if (mail($email, $subject, $body, $headers)) {
+            //     if(mail($email1, $subject1, $body1, $headers1)){
+            //         // echo "Email successfully sent to...";
+            //         header("location: /contact.php?status=success");
 
-                exit;
-                }
-            } else {
-                echo "Email sending failed...";
-                exit;
-            }
+            //     exit;
+            //     }
+            // } else {
+            //     echo "Email sending failed...";
+            //     exit;
+            // }
             // echo "done";exit; 
-            header("location: /contact.php?status=success");
+
+            if(!empty(EMAIL_USERNAME)){
+                
+                $mail = new PHPMailer(true); 
+                //Enable SMTP debugging.
+                $mail->SMTPDebug = false;                               
+                //Set PHPMailer to use SMTP.
+                $mail->isSMTP();            
+                //Set SMTP host name                          
+                $mail->Host = "smtp.gmail.com";
+                //Set this to true if SMTP host requires authentication to send email
+                $mail->SMTPAuth = true;                          
+                //Provide username and password     
+                $mail->Username = EMAIL_USERNAME;                 
+                $mail->Password = EMAIL_PASSWORD;                           
+                //If SMTP requires TLS encryption then set it
+                $mail->SMTPSecure = "tls";                           
+                //Set TCP port to connect to
+                $mail->Port = 587;                                   
+
+                $mail->From = EMAIL_FROMMAIL;
+                $mail->FromName = EMAIL_FROMNAME;
+
+                $mail->addAddress(   $email );
+
+                $mail->isHTML(true);
+
+                $mail->Subject =$subject1;
+                $mail->Body = $body1;
+                // $mail->AltBody = "This is the plain text version of the email content";
+                $mailresult=  $mail->send();
+              
+            }
+ 
+
+            header("location: ".SITEURL."/contact.php?status=success");
         } else {
             // echo "not done";exit;
-            header("location: /contact.php?status=fail");
+            header("location: ".SITEURL."/contact.php?status=fail");
         }
     // } 
     // else {
