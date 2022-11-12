@@ -1,5 +1,4 @@
-<?php include '../header.php';
-include('../dbcon.php');?>
+<?php include 'header.php';?>
 <style>
     label {
         display: inline-block;
@@ -14,7 +13,7 @@ include('../dbcon.php');?>
                     <h1>FAQ</h1>
                 </div>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="<?php echo SITE_URL;?>index.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
@@ -28,8 +27,8 @@ include('../dbcon.php');?>
             <div class="col-12 col-md-12 col-lg-12">
                 <ul class="nav nav-tabs nav-justified" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#vendor" role="tab"
-                            aria-controls="supplier" aria-selected="true">Vendors</a>
+                        <a class="nav-link active" data-toggle="tab" href="#supplier" role="tab"
+                            aria-controls="supplier" aria-selected="true">Suppliers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#customer" role="tab" aria-controls="customer"
@@ -41,11 +40,11 @@ include('../dbcon.php');?>
                     </li>
                 </ul>
                 <div class="tab-content mt-3">
-                    <div class="tab-pane active" id="vendor" role="tabpanel" aria-labelledby="supplier-tab">
+                    <div class="tab-pane active" id="supplier" role="tabpanel" aria-labelledby="supplier-tab">
                         <div class="col-lg-12 col-md-12">
                             <div class="accordion">
                                 <?php
-                                    
+                                    include('dbcon.php');
                                     $q = "SELECT * FROM faq where `tag` = 'suppliers' order by order_num desc";
                                     $result = $con->query($q);
                                     while($row = mysqli_fetch_assoc($result))
@@ -70,7 +69,7 @@ include('../dbcon.php');?>
                         <div class="col-lg-12 col-md-12">
                             <div class="accordion">
                                 <?php
-                               
+                                    include('dbcon.php');
                                     $q = "SELECT * FROM faq where `tag` = 'customers' order by order_num desc";
                                     $result = $con->query($q);
                                     while($row = mysqli_fetch_assoc($result))
@@ -95,7 +94,7 @@ include('../dbcon.php');?>
                         <div class="col-lg-12 col-md-12">
                             <div class="accordion">
                                  <?php
-
+                                    include('dbcon.php');
                                     $q = "SELECT * FROM faq where `tag` = 'personnels' order by order_num desc";
                                     $result = $con->query($q);
                                     while($row = mysqli_fetch_assoc($result))
@@ -124,4 +123,4 @@ include('../dbcon.php');?>
 
 
 
-<?php include '../footer.php';?>
+<?php include 'footer.php';?>

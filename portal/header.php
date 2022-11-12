@@ -161,7 +161,9 @@
                     <a href="https://www.pinterest.com/groupraichand/" target="_blank">
                         <i class='fab fa-pinterest social-icon youtube-icon'></i>
                     </a>
-
+                    <a href="https://t.me/groupraichand" target="_blank">
+                        <span class="fab fa-tumblr social-icon tumblr-icon"></span>
+                    </a>
                     <a href="https://t.me/groupraichand" target="_blank">
                         <span class="fab fa-telegram social-icon facebook-icon"></span>
                     </a>

@@ -10,7 +10,7 @@
                        <li><a href="<?php echo SITE_URL;?>portal/press-release.php">Press Release</a></li> &nbsp;&nbsp;|
                         <li><a href="<?php echo SITE_URL;?>portal/faq.php">FAQ </a></li> &nbsp;&nbsp;|
                         <li><a href="<?php echo SITE_URL;?>portal/policies.php">Policies </a></li> &nbsp;&nbsp;|
-                        <li><a href="<?php echo SITE_URL;?>portal/investor-relations.php">Investor Relations</a></li>&nbsp;&nbsp;|
+                        <li><a href="<?php echo SITE_URL;?>portal/investor-relations.php">Investors Relation</a></li>&nbsp;&nbsp;|
                         <li><a href="<?php echo SITE_URL;?>careers.php" class="w-100">Careers</a></li>
 
                     </ul>
@@ -74,7 +74,9 @@
                     <li><a href="https://www.pinterest.com/groupraichand/" target="_blank">
                         <i class='fab fa-pinterest footer-icons'></i>
                     </a></li>
-
+ <li><a href="https://t.me/groupraichand" target="_blank">
+                        <span class="fab fa-tumblr footer-icons"></span>
+                    </a></li>
                     <li><a href="https://t.me/groupraichand" target="_blank">
                         <span class="fab fa-telegram footer-icons"></span>
                     </a></li>

@@ -48,9 +48,9 @@ $h = "";
 
 
                                    // $sql_policies = "SELECT * FROM policies LEFT JOIN bname_category ON bname_category.id =  policies.bname WHERE categories = '" . $row_policies_cat['id'] . "'";
-                                    $sql_policies = "SELECT polcy.*, cat.id AS catID, cat.categories, cat.filename
+                                    $sql_policies = "SELECT polcy.*, cat.id AS catID, cat.bname, cat.filename
                                     FROM policies AS polcy
-                                    LEFT JOIN cat AS cat
+                                    LEFT JOIN bname_category AS cat
                                     ON cat.id = polcy.bname
                                     WHERE polcy.categories = ".$row_policies_cat['id'];
                                     //echo $sql_policies;exit;
