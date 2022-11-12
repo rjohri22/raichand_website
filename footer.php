@@ -7,11 +7,11 @@
                 </div>
                 <div class="col-lg-7 col-md-7">
                     <ul class="menu">
-                        <li><a href="portal/press-release.php">Press Release</a></li> &nbsp;&nbsp;|
-                        <li><a href="portal/faq.php">FAQ </a></li> &nbsp;&nbsp;|
-                        <li><a href="portal/policies.php">Policies </a></li> &nbsp;&nbsp;|
-                        <li><a href="portal/investor-relations.php">Investor Relations</a></li>&nbsp;&nbsp;|
-                        <li><a href="careers.php" class="w-100">Careers</a></li>
+                        <li><a href="<?php echo SITEURL; ?>/portal/press-release.php">Press Release</a></li> &nbsp;&nbsp;|
+                        <li><a href="<?php echo SITEURL; ?>/portal/faq.php">FAQ </a></li> &nbsp;&nbsp;|
+                        <li><a href="<?php echo SITEURL; ?>/portal/policies.php">Policies </a></li> &nbsp;&nbsp;|
+                        <li><a href="<?php echo SITEURL; ?>/portal/investor-relations.php">Investor Relations</a></li>&nbsp;&nbsp;|
+                        <li><a href="<?php echo SITEURL; ?>/careers.php" class="w-100">Careers</a></li>
                     </ul>
                     <!--Scroll to top Two-->
                 </div>

@@ -3,7 +3,7 @@ include("../dbcon.php");
 ?>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
@@ -12,22 +12,18 @@ include("../dbcon.php");
         content: "\f1c1";
         margin-right: 10px;
     }
-
     .pdf-header {
         font-weight: 600;
     }
-
     .category_list_button {
         font-size: 20px !important;
         font-weight: 900 !important;
         color: black !important;
         text-decoration-line: none !important;
     }
-
     .custom_row {
         margin-left: 3px !important;
     }
-
     .dwonload_css {
         margin-left: 10% !important;
         width: auto !important;
@@ -39,19 +35,14 @@ include("../dbcon.php");
         font-family: "Font Awesome 5 Free";
         position: absolute;
         right: 0;
-        color: ##efe8e3;
-        font-size: 18px;
         font-weight: 600;
         margin-right: 2%;
 
     }
-
     #accordion .mb-0>button[aria-expanded="true"]:after {
         content: "\f068";
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
-        color: #efe8e3;
-        font-size: 18px;
     }
 
     /************************ Added for new accordion : END  ************/
@@ -67,419 +58,294 @@ include("../dbcon.php");
                     <h1>Press Release</h1>
                 </div>
                 <ul class="bread-crumb clearfix">
-                    <!-- Modify 24/8/2022 start -->
-                    <li><a href="<?php echo SITE_URL; ?>index.php">Home</a></li>
-                    <!-- Modify 24/8/2022 end -->
+                    <li><a href="index.php">Home</a></li>
                     <li>Press Relaese</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<section class="faq-section-five" style="margin-top:-20px;background:#fff;padding: 40px 0px 5px;">
-    <div class="pattern"></div>
+
+<!-- Page Title -->
+
+<!-- sidebar-page-container -->
+
+<section class="sidebar-page-container">
     <div class="auto-container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="contact-form-area">
-                    <form method="post" action="press-release.php" class="contact-form">
-                        <div class="row">
-                            <div class="col-md-3 form-group">
-                                <label>Years</label>
-                                <?php
-                                // include("config.php");
-                                // $sql = "SELECT * FROM `periods`";
-                                // $result = mysqli_query($con, $sql) or die("Query failed:");
-                                //    $row = mysqli_fetch_assoc($result);
-                                //     echo '<pre>aaa';print_r($row); exit;
-                                ?>
-                                <!-- <select class="form-control" id="year" name="year">
-                                    <option  value="">select year</option>
-                                    <?php
-                                    // if (mysqli_num_rows($result) > 0) {
-                                    //     while ($row = mysqli_fetch_assoc($result)) {
+        <div class="row" style="flex-direction:row-reverse">
+            <div class="col-lg-12 content-side order-lg-2">
+                <div class="row press-card">
+                    <div class="col-lg-12">
+                        <div class="contact-form-area">
+                            <form method="post" action="press-release.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Years</label>
+                                        <select class="form-control" style="width:100%;" name="year" id="year">
+                                            <option value="">select year</option>
+                                        </select>
+                                    </div>
 
-
-                                    //         if ($row['periods']) {
-                                    //         echo "<option selected value={$row['id']}>{$row['periods']}</option>";
-                                    //         } else {
-                                    //         echo "<option value={$row['periods']}</option>";
-                                    //         }
-                                    //     }
-                                    // } 
-                                    ?>
-                                    </option>
-                                </select> -->
-
-                                <select class="form-control" id="year" name="year">
-                                    <option value="">Select Year</option>
-                                   
-                                   //ye coded hataya hai backup me pura code hai
-                                   
-                                   
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                <label>Categories</label>
-                                <?php
-                                // include("config.php");
-                                $sql = "SELECT * FROM press_category";
-                                $result = mysqli_query($con, $sql) or die("Query failed:");
-                                ?>
-                                <select class="form-control" id="category" name="category">
-
-                                    <option value="">Select Category</option>
-                                    <?php if (mysqli_num_rows($result) > 0) {
-                                        while ($row = mysqli_fetch_assoc($result)) {
-                                            if (isset($_POST['category']) && $row['id'] == $_POST['category']) {
-                                                echo "<option selected value={$row['id']}>{$row['category']}</option>";
-                                            } else {
-                                                echo "<option value={$row['id']}>{$row['category']}</option>";
-                                            }
-                                        }
-                                    } ?>
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                <label>Tags</label>
-                                <select class="form-control" id="tags" name="tags">
-                                    <option value="">Select Tag</option>
-                                    <?php
-                                    $stm = "SELECT * FROM press_release limit 12";
-                                    $res = $con->query($stm);
-                                    while ($row = mysqli_fetch_array($res)) {
-
-                                        $list = array();
-                                        $var = explode(',', $row['tags']);
-                                        $ct = count($var);
-                                        while ($ct-- != 0) {
-                                            array_push($list, $var[$ct]);
-                                        }
-                                        $data = array_unique($list);
-                                        $cst = count($data);
-                                        foreach ($data as $key => $value) {
-                                            if ($value != "") {
-                                                if ($value == $_POST['tags']) {
-                                                    echo '<option selected value="' . $value . '">#' . $value . '</option>';
-                                                } else {
-                                                    echo '<option value="' . $value . '">#' . $value . '</option>';
+                                    <!-- ==================== category start ========================== -->
+                                    <div class="col-md-3">
+                                        <label>Categories</label>
+                                        <?php 
+                                        // include("config.php");
+                                        $sql = "SELECT * FROM press_category";
+                                        $result = mysqli_query($con, $sql) or die("Query failed:");
+                                        ?>
+                                        <select class="form-control" id="category" name="category">
+                                            <option value="">select category</option>
+                                            <?php if (mysqli_num_rows($result) > 0) {
+                                                while ($row = mysqli_fetch_assoc($result)) {
+                                                    if ($row['id'] == $_POST['category']) {
+                                                        echo "<option selected value={$row['id']}>{$row['category']}</option>";
+                                                    } else {
+                                                        echo "<option value={$row['id']}>{$row['category']}</option>";
+                                                    }
                                                 }
-                                            }
-                                            // echo ("<option><li><a onclick=\"sendhas('$value')\">#$value</a></li></option>");
-                                        }
-                                    }
-                                    ?>
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 link-btn text-left" style="margin-top: 10px;">
-                                <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Search</span></button>
-                            </div>
-                        </div>
-                    </form>
+                                            } ?>
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <!-- ==================== category  END ====================-->
 
-                    <?php //echo "<pre>";print_r($_POST); exit; 
-                    ?>
-                    <br>
+                                    <!-- ==================== Tag START =========================-->
+
+                                    <div class="col-md-3">
+                                        <label for="">Tag Cloud</label>
+                                        <ul class="clearfix" id="">
+                                            <select class="form-control" id="tags" name="tags">
+                                                <option value="">Tags</option>
+                                                <?php
+                                                $stm = "SELECT * FROM press_release limit 12";
+                                                $res = $con->query($stm);
+                                                while ($row = mysqli_fetch_array($res)) {
+
+                                                    $list = array();
+                                                    $var = explode(',', $row['tags']);
+                                                    $ct = count($var);
+                                                    while ($ct-- != 0) {
+                                                        array_push($list, $var[$ct]);
+                                                    }
+                                                    $data = array_unique($list);
+                                                    $cst = count($data);
+                                                    foreach ($data as $key => $value) {
+                                                        if ($value != "") {
+                                                            if ($value == $_POST['tags']) {
+                                                                echo '<option selected value="' . $value . '">#' . $value . '</option>';
+                                                            } else {
+                                                                echo '<option value="' . $value . '">#' . $value . '</option>';
+                                                            }
+                                                        }
+                                                        // echo ("<option><li><a onclick=\"sendhas('$value')\">#$value</a></li></option>");
+                                                    }
+                                                }
+                                                ?>
+                                                </option>
+                                            </select>
+                                        </ul>
+                                    </div>
+                                    <!-- ==================== Tag END =========================-->
+
+                                    <!-- serch button start -->
+                                    <div class="col-md-3 link-btn text-right" style="margin-top: 30px;">
+                                        <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Search</span></button>
+                                    </div>
+                                    <!-- serch button start -->
+
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
+    <!----------------------------------- Bootstrap Accordion : START ------------------------------------------------>
+    <div class="auto-container custom-accordion-section">
+        <div id="accordion">
 
-</section>
+            <?php
+            $year = isset($_POST['year']) ? $_POST['year'] : "";
+            $category = isset($_POST['category']) ? $_POST['category'] : "";
+            $tags = isset($_POST['tags']) ? $_POST['tags'] : "";
+            $src = "";
+            $filterQuery = "";
 
+            if (isset($year) && $year != "") {
+                $filterQuery .= " AND `year` = '$year'";
+            }
+            if (isset($category) && $category != "") {
+                $filterQuery .= " AND `category_id` = '$category'";
+            }
 
-<br>
+            if (isset($tags) && $tags != "") {
+                $filterQuery .= " AND `tags` LIKE '%$tags%'";
+            }
 
+            $pressCategory = "SELECT * FROM press_category";
+            $pressCatResult = $con->query($pressCategory);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!----------------------------------- Bootstrap Accordion : START ------------------------------------------------>
-<div class="auto-container custom-accordion-section">
-    <div id="accordion">
-
-        <?php
-
-        // echo $_POST['year'];exit;
-        $year = isset($_POST['year']) ? $_POST['year'] : "";
-        $category = isset($_POST['category']) ? $_POST['category'] : "";
-        $tags = isset($_POST['tags']) ? $_POST['tags'] : "";
-        $src = "";
-        $filterQuery = "";
-
-        if (isset($year) && $year != "") {
-            $filterQuery .= " AND `year` = '$year'";
-        }
-        if (isset($category) && $category != "") {
-            $filterQuery .= " AND `category_id` = '$category'";
-        }
-
-        if (isset($tags) && $tags != "") {
-            $filterQuery .= " AND `tags` LIKE '%$tags%'";
-        }
-
-        $pressCategory = "SELECT * FROM press_category";
-        $pressCatResult = $con->query($pressCategory);
-
-        foreach ($pressCatResult as $catKey => $catValue) {
-            $catQuery = "";
-            if ((isset($category) && $category != "" && $category == $catValue['id']) || !$category) {
-                if ($catKey == 0) {
-                    $area_expanded = "true";
-                    $collapsed = "";
-                    $container_show_class = "show";
-                } else {
-                    $area_expanded = "false";
-                    $collapsed = "collapsed";
-                    $container_show_class = "";
-                }
-
-        ?>
-                <div class="card">
-
-                    <?php
-                    if (isset($category) && $category != "") {
-                        $catQuery .= " AND `category_id` = '$category' AND `category_id` = '" . $catValue["id"] . "'";
+            foreach ($pressCatResult as $catKey => $catValue) {
+                $catQuery = "";
+                if ((isset($category) && $category != "" && $category == $catValue['id']) || !$category) {
+                    if ($catKey == 0) {
+                        $area_expanded = "true";
+                        $collapsed = "";
+                        $container_show_class = "show";
                     } else {
-                        $catQuery .= " AND `category_id` = '" . $catValue["id"] . "'";
+                        $area_expanded = "false";
+                        $collapsed = "collapsed";
+                        $container_show_class = "";
                     }
-                    $stm = "SELECT * FROM press_release WHERE 1=1 $filterQuery $catQuery";
-                    $result = $con->query($stm);
-                    if ($result->num_rows > 0) {
-                    ?>
-                    <style>
-                        @media screen and (max-width:600px)
-                        {
-                            #m
-                            {
-                                font-size:14px;
-                            }
+
+            ?>
+                    <div class="card">
+                        <?php
+                        if (isset($category) && $category != "") {
+                            $catQuery .= " AND `category_id` = '$category' AND `category_id` = '" . $catValue["id"] . "'";
+                        } else {
+                            $catQuery .= " AND `category_id` = '" . $catValue["id"] . "'";
                         }
-                    </style>
-                        <div class="card-header" id="heading<?php echo $catValue['id']; ?>">
-                            <h5 class="mb-0">
-                                <button class="category_list_button btn btn-link <?php echo $collapsed; ?>" data-toggle="collapse" data-target="#collapse<?php echo $catValue['id']; ?>" aria-expanded="<?php echo $area_expanded; ?>" aria-controls="collapse<?php echo $catValue['id']; ?>" style="color:red">
+                        $stm = "SELECT * FROM press_release WHERE 1=1 $filterQuery $catQuery";
+                        $result = $con->query($stm);
+                        if ($result->num_rows > 0) {
+                        ?>
+                            <div class="card-header" id="heading<?php echo $catValue['id']; ?>">
+                                <h5 class="mb-0">
+                                    <button class="category_list_button btn btn-link <?php echo $collapsed; ?>" data-toggle="collapse" data-target="#collapse<?php echo $catValue['id']; ?>" aria-expanded="<?php echo $area_expanded; ?>" aria-controls="collapse<?php echo $catValue['id']; ?>">
 
-                                    <!-- Category Title ---->
-                                    <span id="m"><?php echo ucfirst($catValue['category']); ?></span>
-                                    <!-- Category Title ---->
+                                        <!-- Category Title ---->
+                                        <?php echo ucfirst($catValue['category']); ?>
+                                        <!-- Category Title ---->
 
-                                </button>
-                            </h5>
-                        </div>
-                    <?php } ?>
+                                    </button>
+                                </h5>
+                            </div>
+                        <?php } ?>
 
-                    <?php
-                    if (isset($category) && $category != "") {
-                        $catQuery .= " AND `category_id` = '$category' AND `category_id` = '" . $catValue["id"] . "'";
-                    } else {
-                        $catQuery .= " AND `category_id` = '" . $catValue["id"] . "'";
-                    }
-                    // $stm = "SELECT * FROM press_release WHERE 1=1 $filterQuery $catQuery";
-                    $stm = "SELECT press_release.*, periods.id,periods.periods 
-                    FROM press_release 
-                    LEFT JOIN periods ON press_release.year=periods.id 
-                    WHERE 1=1 $filterQuery $catQuery ORDER BY press_release.year ";
-
-                    // SELECT press_release.year, periods.id
-                    // FROM press_release
-                    // LEFT JOIN periods
-                    // ON press_release.year=periods.id
-                    // ORDER BY press_release.year;
-
-
-                    $result = $con->query($stm);
-                    foreach ($result as $key => $value) {
-                        // echo '<pre>';print_r($value);exit;
-                    ?>
-
-                        <div style="background-color:#F5F5F5" id="collapse<?php echo $catValue['id']; ?>" class="collapse <?php echo $container_show_class; ?>" aria-labelledby="heading<?php echo $catValue['id']; ?>" data-parent="#accordion">
-
-                            <div class="container">
-
-                                <div class="card" style="margin-top:15px;margin-bottom:15px">
-                                    <div class="card-body">
-
-                                        <div class="row">
-                                            <div class="col-md-9 col-sm-8 col-xs-12 pdf-block-left">
-
+                        <?php
+                        if (isset($category) && $category != "") {
+                            $catQuery .= " AND `category_id` = '$category' AND `category_id` = '" . $catValue["id"] . "'";
+                        } else {
+                            $catQuery .= " AND `category_id` = '" . $catValue["id"] . "'";
+                        }
+                        $stm = "SELECT * FROM press_release WHERE 1=1 $filterQuery $catQuery";
+                        $result = $con->query($stm);
+                        foreach ($result as $key => $value) {
+                            //print_r($value);exit;
+                        ?>
+                            <div id="collapse<?php echo $catValue['id']; ?>" class="collapse <?php echo $container_show_class; ?>" aria-labelledby="heading<?php echo $catValue['id']; ?>" data-parent="#accordion">
+                                <div class="card-body">
+                                    <!-- Category Content ---->
+                                    <div class="row custom_row">
+                                        <div class="col-md-9 col-sm-11 col-xs-11 pdf-block-left">
+                                            <p>
                                                 <?php if ($value['file_type'] == 'pdf') { ?>
-
                                                     <i class="fa fa-file-pdf-o"></i>
 
                                                 <?php } elseif ($value['file_type'] == 'xlsx') { ?>
                                                     <i class="fa fa-file-excel-o"></i>
-
 
                                                 <?php } elseif ($value['file_type'] == 'ppt') { ?>
                                                     <i class="fa fa-file-text"></i>
 
                                                 <?php } elseif ($value['file_type'] == 'doc') { ?>
                                                     <i class="fa  fa-file-word-o"></i>
-
-                                                <?php } elseif ($value['file_type'] == 'docx') { ?>
-                                                    <i class="fa  fa-file-word-o"></i>
-
-                                                <?php } elseif ($value['file_type'] == 'zip') { ?>
-                                                    <i class="fa fa-file-zip-o"></i>
-
- 
-                                                    <i class="bi bi-file-earmark-zip-fill"></i>
-                                                <?php } elseif ($value['file_type'] == 'xls') { ?>
-                                                    <i class="fa  fa-file-excel-o"></i>
-
-                                                <?php } else { ?>
-                                                    <i class=""></i>
-                                                <?php
-                                                } ?>
-
-                                                <!-- <img src="https://www.mahindra.com/assets/img/investor/icons/ZIP/ZIP.png" style="height:20px;width:22px;color:black" /> -->
-                                                <!-- <a href="<?php echo SITE_URL; ?>portal/press-release/<?php echo $value['slug']; ?>"><strong style="font-size:18px;color:black;margin-left:10px">
-                                                    <?php echo $value['file_name']; ?></strong></a> -->
-
-                                                <?php if ($value['file_type'] == 'pdf') { ?>
-                                                    <strong style="font-size:18px;color:black;margin-left:10px"> <?php echo $value['file_name']; ?></strong>
-                                                <?php } else { ?>
-                                                    <strong style="font-size:18px;color:black;margin-left:19px"> <?php echo $value['file_name']; ?></strong>
                                                 <?php } ?>
 
-
-                                                <!-- <a href="/portal/press-release/<?php echo $value['slug']; ?>"><span class="btn-title"><strong style="font-size:18px;color:black;margin-left:10px"> <?php echo $value['file_name']; ?></strong></span></a> -->
-
-                                                <h5 style="margin-left:35px" id="my"><?php
-                                                                                echo date('M, Y', strtotime($value['created_at']));
-
-                                                                                ?></h5>
-                                                <!-- <h5 style="margin-left:35px"><?php
-
-                                                                                    // $date = $value['created_at'];  
-                                                                                    // echo $date;exit;   
-                                                                                    // echo date('F, Y', strtotime($date)); 
-
-                                                                                    ?></h5> -->
-
-                                                <!-- echo $dt->format('F'); -->
-                                            </div>
-                                            <!-- old url start -->
-                                            <!-- href="<?php //echo SITE_URL(); 60px
-                                                        ?>/admin/press-release/uploads/<?php //echo $value['file_name'] . '.' . $value['file_type']; 
-                                                                                            ?>" -->
-                                            <!-- old url END -->
-    <style>
-                    @media screen and (max-width:600px)
-                    {
-                        #shdown1
-                        {
-                            margin-left:132!importantpx;
-                           
-                        }
-                        #shdown
-                        {
-                            margin-left:32px;
-                             
-                        }
-                        #my 
-                        {
-                            font-size:15px;
-                        }
-                        .me
-                        {
-                            margin-top:15px;
-                        }
-                        
-                    }
-                    @media screen and (width:844px)
-                    {
-                        #shdown
-                        {
-                            font-size:17px;
-                        }
-                    }
-                </style>
-               
-                                            <div class="col-md-3 col-sm-4 col-xs-12 pdf-block-right">
-                                                <a href="<?php echo SITEURL; ?>portal/press-release/<?php echo $value['periods']; ?>/<?php echo $value['slug'] ?>">
-
-
-
-                                                    <h5 id="shdown" class="pdf-header me " style="color:black">Download
-                                                        <span style="margin-left:20px">
-                                                            <img id="logo"  src="https://www.mahindra.com/assets/img/investor/icon-download-red.png" />
-                                                        </span>
-                                                        <h5 id="shdown" style="color:black">
-                                                            <?php
-                                                            $bytes = round($value['file_size'], 2);
-                                                            
-                                                            if ($bytes >= 1073741824) {
-                                                                $bytes_size = ($bytes / 1073741824);
-                                                                $file_size = number_format($bytes_size, 2) . "GB";
-                                                            } else if ($bytes >= 1048576) {
-                                                                $bytes_size = ($bytes / 1048576);
-                                                                $file_size = number_format($bytes_size, 2) . " MB";
-                                                            } else if ($bytes >= 1024) {
-                                                                $bytes_size = ($bytes / 1024);
-                                                                $file_size = number_format($bytes_size, 2)  . " KB";
-                                                            } else if ($bytes > 1) {
-                                                                $bytes_size = $bytes;
-                                                                $file_size = number_format($bytes_size, 2) . " bytes";
-                                                            } else if ($bytes == 1) {
-                                                                $bytes_size = $bytes;
-                                                                $file_size = number_format($bytes_size, 2) . " byte";
-                                                            } else {
-                                                                $bytes_size = "0 bytes";
-                                                            }
-                                                            echo $file_size; ?>
-                                                        </h5>
-                                                </a>
-                                            </div>
+                                                <span class="file_header_acc"><?php echo $value['file_name']; ?></span>
+                                            </p>
+                                            <p style="margin-left: 20px;">
+                                                <span><?php echo $value['year']; ?></span>
+                                                <span><?php //echo $value['month']; 
+                                                        ?></span>
+                                            </p>
                                         </div>
-                                        <!-- Category Content ---->
 
+                                        <div class="dwonload_css">
+                                            <p>
+                                                <span> Download </span>
+                                                <a download href="<?php //echo SITE_URL(); 
+                                                                    ?>/admin/press-release/uploads/<?php echo $value['file_name'] . '.' . $value['file_type']; ?>" type="button" class="" style="font-size: 25px; color:black;"><i class="fa fa-download" aria-hidden="true"></i>
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <span>
+                                                    <!-- <?php //echo round($value['file_size'] / 1024, 1);
+                                                            ?>KB -->
+
+                                                    <!-- file size in static  -->
+                                                    <?php
+                                                    $bytes = $value['file_size'];
+                                                    // $bytes = floatval($bytes);
+                                                    // $arBytes = array(
+                                                    //     0 => array(
+                                                    //         "UNIT" => "TB",
+                                                    //         "VALUE" => pow(1024, 4)
+                                                    //     ),
+                                                    //     1 => array(
+                                                    //         "UNIT" => "GB",
+                                                    //         "VALUE" => pow(1024, 3)
+                                                    //     ),
+                                                    //     2 => array(
+                                                    //         "UNIT" => "MB",
+                                                    //         "VALUE" => pow(1024, 2)
+                                                    //     ),
+                                                    //     3 => array(
+                                                    //         "UNIT" => "KB",
+                                                    //         "VALUE" => 10
+                                                    //     ),
+                                                    //     4 => array(
+                                                    //         "UNIT" => "B",
+                                                    //         "VALUE" => 1
+                                                    //     ),
+                                                    // );
+
+                                                    // foreach ($arBytes as $arItem) {
+
+                                                    //     if ($bytes >= $arItem["VALUE"]) {
+                                                    //         $result = $bytes / $arItem["VALUE"];
+                                                    //         $result = str_replace(".", ",", strval(round($result, 2))) . " " . $arItem["UNIT"];
+                                                    //         echo $result;
+                                                    //         break;
+                                                    //     }
+                                                    // static code for size end
+                                                    //dynamic code for size start
+                                                    if ($bytes >= 1073741824) {
+                                                        $bytes_size = ($bytes/1073741824)." GB";
+                                                    } else if ($bytes >= 1048576) {
+                                                        $bytes_size = ($bytes / 1048576)  . " MB";
+                                                    } else if ($bytes >= 1024) {
+                                                        $bytes_size = ($bytes / 1024)  . " KB";
+                                                    } else if ($bytes > 1) {
+                                                        $bytes_size = $bytes . " bytes";
+                                                    } else if ($bytes == 1) {
+                                                        $bytes_size = $bytes . " byte";
+                                                    } else {
+                                                        $bytes_size = "0 bytes";
+                                                    }
+                                                    echo $bytes_size;                                           
+                                                    ?>
+                                                    <!-- file size enddddddddddddddddddd -->
+                                                </span>
+                                            </p>
+                                        </div>
                                     </div>
+                                    <!-- Category Content ---->
                                 </div>
                             </div>
-                        </div>
-                    <?php } ?>
-                </div>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
             <?php } ?>
-        <?php } ?>
+        </div>
     </div>
-</div>
-<br />
-<br />
-<!----------------------------------- Bootstrap Accordion : END ------------------------------------------------>
+    <br/>
+    <br/>
+    <!----------------------------------- Bootstrap Accordion : END ------------------------------------------------>
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script>
@@ -494,11 +360,11 @@ include("../dbcon.php");
         }
         // sp += `<option value=${k}><li>${k}</li></option>`;
     }
-    //$("#year").html(sp);
-
+    $("#year").html(sp);
+    
     // serch year and
     function searchme() {
-        // var year = $('#year').val();
+        var year = $('#year').val();
         var month = $('#month').val();
         var category = $('#category').val();
         var tags = $('#tags').val();
@@ -519,7 +385,7 @@ include("../dbcon.php");
             };
         }
         $.ajax({
-            url: '<?php echo SITE_URL; ?>admin/press-release/search_year.php',
+            url: '<?php echo SITE_URL;?>admin/press-release/search_year.php',
             data: data,
             type: 'post',
             success: function(data) {
@@ -567,20 +433,20 @@ include("../dbcon.php");
 
         });
     }
-
-    function sendhas(data) {
-        $.ajax({
-            url: '<?php echo SITE_URL; ?>admin/press-release/tagsfind.php',
-            data: {
-                find: data
-            },
-            type: 'post',
-            success: function(data) {
-                $row = "";
-                data = JSON.parse(data);
-                var temp = [];
-                data.map((item, index) => {
-                    $row += `<div class="col-md-12 padding-0 mt-20">
+    function sendhas(data)
+    {
+         $.ajax({
+           url:'<?php echo SITE_URL;?>admin/press-release/tagsfind.php',
+           data:{
+               find:data
+           },
+           type:'post',
+           success:function(data){
+               $row = "";
+               data = JSON.parse(data);
+               var temp= [];
+               data.map((item,index)=>{
+                   $row += `<div class="col-md-12 padding-0 mt-20">
                         <div class="panel" id="panel-card" style="display: block;">
                             <div class="row">
                                 <div class="col-lg-10 col-md-10">
@@ -589,7 +455,7 @@ include("../dbcon.php");
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-right">
                                     <small>${Number(item['file_size']).toFixed(2)} MB</small>
-                                    <a download href="<?php echo SITE_URL; ?>admin/press-release/uploads/${item['file_name']}.${item['file_type']}" type="button" class="btn btn-dark"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    <a download href="<?php echo SITE_URL;?>admin/press-release/uploads/${item['file_name']}.${item['file_type']}" type="button" class="btn btn-dark"><i class="fa fa-download" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -623,17 +489,17 @@ include("../dbcon.php");
     function findinfo(input) {
         // alert(input);
         $.ajax({
-            url: '<?php echo SITE_URL; ?>admin/press-release/backend.php',
-            data: {
-                find: input
-            },
-            type: 'post',
-            success: function(data) {
-                $row = "";
-                data = JSON.parse(data);
-                var temp = [];
-                data.map((item, index) => {
-                    $row += `<div class="col-md-12 padding-0 mt-20">
+           url:'<?php echo SITE_URL;?>admin/press-release/backend.php',
+           data:{
+               find:input
+           },
+           type:'post',
+           success:function(data){
+               $row = "";
+               data = JSON.parse(data);
+               var temp= [];
+               data.map((item,index)=>{
+                   $row += `<div class="col-md-12 padding-0 mt-20">
                         <div class="panel" id="panel-card" style="display: block;">
                             <div class="row">
                                 <div class="col-lg-10 col-md-10">
@@ -642,7 +508,7 @@ include("../dbcon.php");
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-right">
                                     <small>${Number(item['file_size']).toFixed(2)} MB</small>
-                                    <a download href="<?php echo SITE_URL; ?>admin/press-release/uploads/${item['file_name']}.${item['file_type']}" type="button" class="btn btn-dark"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    <a download href="<?php echo SITE_URL;?>admin/press-release/uploads/${item['file_name']}.${item['file_type']}" type="button" class="btn btn-dark"><i class="fa fa-download" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
