@@ -3,6 +3,21 @@
 include("dbcon.php");
 include 'header.php'; 
  ?>
+
+ <style>
+    @media screen and (max-width:900px)
+    {
+        #mobileMode
+        {
+          margin-top:200px!important;
+          margin-bottom:300px!important;  
+        }
+        .mobile 
+        {
+            margin-top:100px!important;
+        }
+    }
+    </style>
 <div id="home">
     <nav id="navbar-float" class="floating-menu">
         <div class="main-menu">
@@ -368,7 +383,7 @@ include 'header.php';
     </div>
 </section>
 
-<section class="services-details" id="benifit&value " style="margin-bottom:-100px!important;margin-top:50px" >
+<section class="services-details" id="benifit&value " style="margin-bottom:-100px!important;margin-top:50px" id="mobileMode">
     <div class="auto-container">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
@@ -1478,7 +1493,7 @@ include 'header.php';
 
 
 <!-- Funfacts Section Two -->
-<section class="funfacts-section-two" id="forte" style="background-image:url('assets/images/breadcrum/forte.png')" id="forte">
+<section class="funfacts-section-two mobile" id="forte" style="background-image:url('assets/images/breadcrum/forte.png')">
 
     <div class="auto-container">
         <!-- Fact Counter -->
@@ -1556,7 +1571,7 @@ include 'header.php';
 <section class="news-section" id="livestream" style="background-color:white">
     <div class="row" style="background-color:white">
         <div class="col-lg-3 " style="background-color:white">
-            <img src="assets/images/background/Live+Stream.gif"  />
+            <img src="assets/images/background/Live+Stream.gif" style="margin-top:100px" />
         </div>
         <div class="col-lg-9" style="background-color:white">
             <div class="outer-box">
