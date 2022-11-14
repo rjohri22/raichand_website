@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href=.."/contact.php" class="">
+                            <a href="../contact.php" class="">
                                 Contact Us
                             </a>
                         </li>

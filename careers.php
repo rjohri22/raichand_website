@@ -170,8 +170,8 @@ include("dbcon.php");
             $result = $con->query($sql);
 
             foreach ($result as $row) { ?>
-                <div class="career-block col-lg-4 col-md-6">
-                    <div class="inner-box">
+                <div class="career-block col-lg-4 col-md-6" >
+                    <div class="inner-box" style="height:480px">
                         <div class="time"><?php echo $row['job_flag'] ?></div>
                         <div class="icon"> <img src="assets/images/business-logo/Raichand_TRADING.jpg" alt="" class="imagess" style="height:120px;"></div>
                         <h4><?php echo $row['role'] ?></h4>
@@ -263,7 +263,7 @@ include("dbcon.php");
                     <div class="contact-info">
                         <!--<div class="icon"><span class="flaticon-call-1"></span></div>-->
                         <!--<h4>(555) 890 1234 </h4>--><br>
-                        <a href="career-portal.php" class="theme-btn blink"><span class="btn-title">Apply Now</span></a>
+                        <!-- <a href="career-portal.php" class="theme-btn blink"><span class="btn-title">Apply Now</span></a> -->
 
 
                     </div>
