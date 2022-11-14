@@ -1,5 +1,6 @@
 <?php
-include("config.php");
+include("../../dbcon.php");
+
 
 $new_id= $_GET['id'];
 // echo $new_id;exit;
