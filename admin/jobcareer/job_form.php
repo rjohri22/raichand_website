@@ -1,4 +1,6 @@
-<?php include '../sidebar.php'; ?>
+<?php include '../sidebar.php';
+ 
+ ?>
 
 <!-- CDN for CKeditor -->
 <!-- <script src="https://cdn.ckeditor.com/ckeditor5/10.0.1/classic/ckeditor.js"></script> -->

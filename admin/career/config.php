@@ -12,6 +12,7 @@ if ($host == "http://local.raichandgroup.com" or $host == "local.raichandgroup.c
 }
 //  $con = mysqli_connect('103.171.44.213','websitedb','Sub@2019','websitedb') or die('not connected');
 
+$con = mysqli_connect('localhost', 'root', '', 'raichand_website') or die('not connected kk'); 
 
 if (!$con) {
     die("Connection failed: " . mysqli_connect_error());

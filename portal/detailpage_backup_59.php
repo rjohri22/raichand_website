@@ -28,8 +28,7 @@ $sql_policies = "SELECT polcy.*, cat.id AS catID, cat.policies_categories
                                     FROM policies AS polcy
                                     LEFT JOIN policies_cat AS cat
                                     ON cat.id = polcy.categories
-                                    WHERE polcy.slug = '".$_GET['slug']."'";
-                                    // echo $sql_policies;exit;
+                                    WHERE polcy.id = ".$_GET['id'];
 
 $result_policies = mysqli_query($con, $sql_policies);
 $result = mysqli_fetch_assoc($result_policies);
@@ -43,8 +42,8 @@ $result = mysqli_fetch_assoc($result_policies);
                     <h1><?php echo $result['policies_categories']; ?> </h1>
                 </div>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="<?php echo SITE_URL;?>/index.php">Home</a></li>
-                    <li><a href="<?php echo SITE_URL;?>/portal/policies.php">Our Polices</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="<?php echo SITE_URL;?>portal/policies.php">Our Polices</a></li>
                     <li><a href="#"><?php echo $result['policies_categories']; ?></a></li>
 
                 </ul>

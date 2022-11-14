@@ -10,7 +10,7 @@ $sql = "DELETE FROM contact_us WHERE id = {$new_id}";
 
 $result = mysqli_query($con, $sql) or die(" Query unsuccessful.");
 
-header("location:/raichandgroup/admin/contactus");
+header("location:".SITEURL."/admin/contactus");
 
 mysqli_close($con);
 ?>

@@ -1,7 +1,6 @@
 <?php include '../sidebar.php'; ?>
 <?php
-
-include("config.php");
+include("../../dbcon.php");
 
 $role = $business = $country = "";
 
@@ -16,7 +15,7 @@ if (isset($_POST['submit'])) {
 ?>
 
         <script type="text/javascript">
-            window.location.href = "careerindex.php";
+            window.location.href = "<?php echo SITEURL;  ?>/admin/career/careerindex.php";
         </script>
 <?php
         //header("location :http://local.raichandgroup.com/admin/career/careerindex.php");

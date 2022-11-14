@@ -14,9 +14,7 @@ $h = "";
                     <h1>Policies</h1>
                 </div>
                 <ul class="bread-crumb clearfix">
-                    <!-- Modify 24/8/2022 start -->
-                    <li><a href="<?php echo SITE_URL;?>index.php">Home</a></li>
-                    <!-- Modify 24/8/2022 end -->
+                    <li><a href="index.php">Home</a></li>
                     <li>Policies</li>
                 </ul>
             </div>
@@ -48,9 +46,9 @@ $h = "";
 
 
                                    // $sql_policies = "SELECT * FROM policies LEFT JOIN bname_category ON bname_category.id =  policies.bname WHERE categories = '" . $row_policies_cat['id'] . "'";
-                                    $sql_policies = "SELECT polcy.*, cat.id AS catID, cat.categories, cat.filename
+                                    $sql_policies = "SELECT polcy.*, cat.id AS catID, cat.bname, cat.filename
                                     FROM policies AS polcy
-                                    LEFT JOIN cat AS cat
+                                    LEFT JOIN bname_category AS cat
                                     ON cat.id = polcy.bname
                                     WHERE polcy.categories = ".$row_policies_cat['id'];
                                     //echo $sql_policies;exit;
@@ -95,9 +93,7 @@ $h = "";
 
                                                         <h4><?php echo $row_policies['title']; ?></h4>
                                                         <div class="link-btn">
-                                                            <a class="theme-btn btn-style-one" href="/portal/policies/<?php echo $row_policies['slug']; ?>"><span class="btn-title">View More</span></a>
-                                                            <!-- <a class="theme-btn btn-style-one" href="detailpage.php?id=<?php //echo $row_policies['id']; ?>"><span class="btn-title">View More</span></a> -->
-
+                                                            <a class="theme-btn btn-style-one" href="detailpage.php?id=<?php echo $row_policies['id']; ?>"><span class="btn-title">View More</span></a>
                                                         </div>
 
 

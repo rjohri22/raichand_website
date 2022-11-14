@@ -82,7 +82,7 @@ if(isset($_POST['submit'])){
 
 }
 
-header("Location: ".SITEURL."admin/service_creation");
+header("Location: ".SITEURL."/admin/service_creation");
 exit();
 
 
