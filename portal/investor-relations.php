@@ -1,6 +1,15 @@
-<?php include '../header.php';
-include("../dbcon.php");
+<?php session_start();
+function siteURL()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'] . '/raichand_website';
+    return $protocol . $domainName;
+}
+define('SITE_URL', siteURL());
+
+$site_url= siteURL(); 
  
+include("../dbcon.php");
 ?>
 <!-- link add for pdf xlsx... icon  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

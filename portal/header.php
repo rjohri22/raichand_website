@@ -41,7 +41,7 @@
                 <div class="sidebar-body">
                     <ul class="list-unstyled components">
                          <li>
-                            <a href="../index.php" class="">
+                            <a href="../" class="">
                                Home
                             </a>
                         </li>
