@@ -6,7 +6,7 @@ function siteURL()
     return $protocol . $domainName;
 }
 define('SITE_URL', siteURL());
-
+include 'header.php'; 
 $site_url= siteURL(); 
  
 include("../dbcon.php");

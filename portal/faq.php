@@ -8,7 +8,7 @@ function siteURL()
 define('SITE_URL', siteURL());
 
 $site_url= siteURL(); 
- 
+include 'header.php'; 
 include("../dbcon.php");
 ?>
 <style>
