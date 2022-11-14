@@ -14,7 +14,7 @@ if (isset($_POST["submit"]))
 
 	$row = $con->query($sql);
 ?>
-    <script>window.location.href='http://local.raichandgroup.com/admin/press-release/cindex.php';</script>
+    <script>window.location.href='<?php echo SITEURL; ?>/admin/press-release/cindex.php';</script>
 <?php	
     //header("location: /admin/press-release/cindex.php");
     
