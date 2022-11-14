@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
     $row = $con->query($sql);
     if ($row) {
         echo "<script>alert('Category Updated successfully')</script>";
-        echo "<script>window.location.href='".SITE_URL."admin/policies/cindex.php';</script>";
+        echo "<script>window.location.href='".SITEURL."/admin/policies/cindex.php';</script>";
         exit;
     } else {
         echo "data not posted".$sql;

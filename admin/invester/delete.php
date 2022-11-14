@@ -7,7 +7,7 @@ $sql = "DELETE FROM invester_relation WHERE id = {$new_id}";
 
 $result = mysqli_query($con, $sql) or die(" Query unsuccessful.");
 
-header("location: /admin/invester/");
+header("location: ".SITEURL."/admin/invester/");
 
 mysqli_close($con);
 ?>

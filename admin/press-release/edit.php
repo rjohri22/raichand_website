@@ -10,7 +10,7 @@ if(isset($_GET['id']))
     
 }
 else {
-    header("location: <?php echo SITE_URL;?>admin/press-release/");
+    header("Location:".SITEURL."/admin/press-release/");
 }
 
 if (isset($_POST['submit']))
@@ -27,8 +27,10 @@ if (isset($_POST['submit']))
         // Execute query
         $row = $con->query($sql);
         if ($row) {
-            echo "<script>window.location.href=".SITE_URL."admin/press-release/';</script>";
-            exit;
+
+            
+            echo "<script type='text/javascript'>window.location.href='".SITEURL."/admin/press-release/';</script>";
+            exit();
         }else
         {
             echo "data not posted".$sql;

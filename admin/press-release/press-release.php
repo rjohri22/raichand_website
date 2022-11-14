@@ -32,7 +32,8 @@ if(isset($_POST['submit']))
         // Execute query
         $row = $con->query($sql);
         if ($row) {
-            echo "<script>window.location.href=".SITE_URL."admin/press-release';</script>";
+            echo "<script>window.location.href='".SITEURL."/admin/press-release';</script>";
+            exit();
   
            // header('location: ../');
         }else

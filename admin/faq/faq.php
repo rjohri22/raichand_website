@@ -17,14 +17,14 @@ if (isset($_POST['submit']))
 
 
   $row = $con->query($sql);
-        if ($row)
-         {
-            echo "data posted".$sql;
+        if ($row) 
+        echo '<script>window.location.href = "'.SITEURL.'/admin/faq";</script>';
+        
+        exit();
         }else
         {
-
-            echo "data not posted".$sql;
-        }
+            // header("Location:".SITEURL."/admin/faq/");
+            // exit(); 
 }
 
 ?>
