@@ -1,4 +1,8 @@
-<?php include 'header.php';?>
+<?php
+ 
+include("dbcon.php");
+include 'header.php'; 
+ ?>
 <style>
 .accordion {
     background-color: #fff !important;
@@ -6,6 +10,17 @@
 
 .accordion:after {
     display: none;
+}
+@media screen and (max-width:900px) {
+    #view
+    {
+        width:160px;
+        height:300px;
+    }
+    #viewtext
+    {
+        font-size:16px;
+    }
 }
 
 </style>
@@ -355,24 +370,24 @@
                               <div class="col-lg-12 col-md-12 text-center">
                                     <h3><strong>What are beliefs and values that are important to us as a company?</strong></h3>
                                 </div>
-                            <div class="feature-block-four col-lg-4 col-md-6">
+                            <div class="feature-block-four col-lg-4 col-md-6" id="view">
                                 <div class="inner-box">
                                     <div class="icon"><img src="assets/images/icons/icon-16.png" alt=""></div>
-                                    <h4>Leadership</h4>
+                                    <h4 id="viewtext">Leadership</h4>
                                     <div class="text"><p>The courage to shape a better future.</p></div>
                                 </div>
                             </div>
-                            <div class="feature-block-four col-lg-4 col-md-6">
+                            <div class="feature-block-four col-lg-4 col-md-6" id="view">
                                 <div class="inner-box">
                                     <div class="icon"><img src="assets/images/icons/icon-14.png" alt=""></div>
-                                    <h4>Collaboration </h4>
+                                    <h4 id="viewtext">Collaboration </h4>
                                     <div class="text"><p>Leverage collective genius.</p></div>
                                 </div>
                             </div>
-                            <div class="feature-block-four col-lg-4 col-md-6">
+                            <div class="feature-block-four col-lg-4 col-md-6" id="view">
                                 <div class="inner-box">
                                     <div class="icon"><img src="assets/images/icons/icon-15.png" alt=""></div>
-                                    <h4>Diversity</h4>
+                                    <h4 id="viewtext">Diversity</h4>
                                     <div class="text"><p>As inclusive as our brand.</p></div>
                                 </div>
                             </div>
@@ -847,4 +862,19 @@
     </div>
 </section>
 
-<?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
+<script>
+    $('.counter-count').each(function() {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+
+            //chnage count up speed here
+            duration: 4000,
+            easing: 'swing',
+            step: function(now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+</script>

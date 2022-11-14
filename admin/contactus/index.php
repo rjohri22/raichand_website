@@ -105,7 +105,7 @@ $result = mysqli_query($con, $sql);
                                             <td><?php echo $row['country']; ?></td>
                                             <td><?php echo $row['type']; ?> - <?php echo $row['message']; ?></td>
                                             <!-- <td><?php //echo ($row['status'] == 1)?'Active':'Inactive'; ?></td> -->
-                                            <td> <a class="btn btn-danger" onclick="return confirm('are you sure?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td> 
+                                            <td> <a class="btn btn-warning" onclick="return confirm('are you sure?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td> 
                                             <!-- <a class="btn btn-info" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>  -->
                                     <?php
                                     }

@@ -63,8 +63,8 @@ $result = $con->query($sql);
 						 			<td><?php echo $row['answer']; ?></td>
 						 			<td><?php echo $row['tag']; ?></td>
 						 			<td><?php echo $row['order_num']; ?></td>
-						 			<td><a class="btn btn-info btn-sm" href="edit.php?id=<?php echo $row['id']; ?>"><i class="fa fa-edit" style="color: #fff;"></i></a></td>
-						 			 <td><a class="btn btn-danger btn-sm" onclick="return confirm('are you sure?')" href="delete.php?id=<?php echo $row['id']; ?>"><i class="fa fa-trash" style="color: #fff;"></i></a></td>
+						 			<td><a class="btn btn-warning" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>
+						 			<a class="btn btn-warning" onclick="return confirm('are you sure?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
 						 		</tr>
 						 		<?php 
 						 	}

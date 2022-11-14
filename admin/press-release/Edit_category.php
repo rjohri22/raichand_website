@@ -21,7 +21,7 @@ if (mysqli_num_rows($query) > 0) {
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
                             <ol class="breadcrumb ms-auto">
-                                <li><a href="<?php echo SITE_URL;?>admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
+                                <li><a href="<?php echo SITE_URL;?>/admin/" class="fw-normal">Dashboard &nbsp;/&nbsp;</a></li>
                                 <li><a href="#" class="fw-normal">press realese</a></li>
                             </ol>
                         </div>
@@ -41,7 +41,7 @@ if (mysqli_num_rows($query) > 0) {
                                         <label for="category">Category:</label>
                                         <input type="hidden" id="id" name="id" value="<?php echo $row['id']; ?>">
                                         <input type="text" class="form-control" value="<?php  echo $row['category']; ?>" name="newcategory"><br>
-                                        <input type="submit" class="btn btn-success" name="submit" value="submit">
+                                        <input type="submit" class="btn btn-warning text-white" name="submit" value="submit">
                                     </div>
                                 </div>
                             </div>

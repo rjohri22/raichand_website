@@ -252,7 +252,7 @@ if (mysqli_num_rows($query) > 0) {
                                         <!-- submit data for edit in updateprocess.php -->
                                         <div class="form-group mb-4">
                                             <div class="col-sm-12">
-                                                <input type="submit" class="form-control btn-success" name="submit" id="submit" value="submit">
+                                                <input type="submit" class="btn btn-warning text-white" name="submit" id="submit" value="submit">
                                             </div>
                                         </div>
 

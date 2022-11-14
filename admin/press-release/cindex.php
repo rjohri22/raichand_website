@@ -57,9 +57,9 @@ $result = mysqli_query($con,$sql);
                                     ?>
                                 <tr>
                                     <td><?php echo $row['category']; ?></td>
-                                    <td><a class="btn btn-danger" onclick="return confirm('are you sure?')" href="delete_category.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+                                    <td> <a class="btn btn-warning" onclick="return" href="Edit_category.php?id=<?php echo $row['id']; ?>">Edit</a> <a class="btn btn-warning" onclick="return confirm('are you sure?')" href="delete_category.php?id=<?php echo $row['id']; ?>">Delete</a>
 
-                                    <td><a class="btn btn-danger" onclick="return" href="Edit_category.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                                   </td>
                                 <?php 
                             }
                             }
