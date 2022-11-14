@@ -683,7 +683,7 @@ $.ajax({
     dataType: 'html',
     data: {id:$cat_id},
     success: function(data){
-        $('#custom_html_row').html(data);
+        // $('#custom_html_row').html(data);
         //$('#custom_html_row .owl-nav').removeClass('disabled');
     }
  });
