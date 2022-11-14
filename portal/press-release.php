@@ -1,4 +1,15 @@
-<?php include '../header.php';
+<?php session_start();
+function siteURL()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'] . '/raichand_website';
+    return $protocol . $domainName;
+}
+define('SITE_URL', siteURL());
+
+$site_url= siteURL(); 
+
+include 'header.php'; 
 include("../dbcon.php");
 ?>
 
@@ -57,7 +68,6 @@ include("../dbcon.php");
     /************************ Added for new accordion : END  ************/
 </style>
 
-<?php include 'header.php'; ?>
 <!-- Page Title -->
 <section class="page-title" style="background-image: url(../assets/images/breadcrum/press-release.png);">
     <div class="auto-container">
