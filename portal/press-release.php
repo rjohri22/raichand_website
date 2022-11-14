@@ -1,4 +1,14 @@
-<?php include '../header.php';
+<?php session_start();
+function siteURL()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'] . '/raichand_website';
+    return $protocol . $domainName;
+}
+define('SITE_URL', siteURL());
+
+$site_url= siteURL(); 
+ 
 include("../dbcon.php");
 ?>
 
