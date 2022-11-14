@@ -8,7 +8,7 @@ $sql = "DELETE FROM policies WHERE id = {$new_id}";
 
 $result = mysqli_query($con, $sql) or die(" Query unsuccessful.");
 
-header("location: /admin/policies/");
+header("location: ".SITEURL."/admin/policies/");
 
 mysqli_close($con);
 ?>

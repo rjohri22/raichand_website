@@ -14,7 +14,7 @@ if(isset($_GET['id']))
     //print_r($rm); exit;
 }
 else {
-    header("location: <?php echo SITE_URL;?>admin/policies/");
+    header("location: ".SITEURL."/admin/policies/");
 }
 
 if (isset($_POST['submit']))
@@ -37,7 +37,7 @@ if (isset($_POST['submit']))
         // Execute query
         $row = $con->query($sql);
         if ($row) {
-            echo "<script>window.location.href='".SITE_URL."admin/policies/';</script>";
+            echo "<script>window.location.href='".SITEURL."/admin/policies/';</script>";
             exit;
         }else
         {

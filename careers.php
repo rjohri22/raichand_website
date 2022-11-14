@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php 
+include 'header.php'; 
+include("dbcon.php");
+?>
 
 <section class="page-title" style="background-image: url(assets/images/breadcrum/about.png);">
     <div class="auto-container">
@@ -28,11 +31,11 @@
                             </div> -->
 
                             <div class="col-md-3 form-group">
-                                <label>Role</label>
+                                <label>Roles</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
-                                    <option value="">Role select</option>
+                                    <option value="">Select Role</option>
                                     <?php
-                                    include("config.php");
+                                    
                                     $sql = "SELECT * FROM career";
                                     $result = $con->query($sql);
                                     if (mysqli_num_rows($result) > 0) {
@@ -46,12 +49,12 @@
                             </div>
 
                             <div class="col-md-3 form-group">
-                                <label>Business</label>
+                                <label>Businesses</label>
                                 <select class="form-control" id="exampleFormControlSelect2">
-                                    <option value="">Business</option>
+                                    <option value="">Select Business</option>
                                     <?php
                                     include("config.php");
-                                    $sql = "SELECT * FROM bname_category";
+                                    $sql = "SELECT * FROM `bname_category` ORDER BY `bname_order`";
                                     $result = $con->query($sql);
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) {
@@ -64,9 +67,9 @@
                             </div>
 
                             <div class="col-md-3 form-group">
-                                <label>Country</label>
+                                <label>Countries</label>
                                 <select class="form-control" id="exampleFormControlSelect3">
-                                    <option value="">Country</option>
+                                    <option value="">Select Country</option>
                                     <option>All</option>
                                     <option>Australia</option>
                                     <option>Bahrain</option>
@@ -172,7 +175,7 @@
                         <div class="time"><?php echo $row['job_flag'] ?></div>
                         <div class="icon"> <img src="assets/images/business-logo/Raichand_TRADING.jpg" alt="" class="imagess" style="height:120px;"></div>
                         <h4><?php echo $row['role'] ?></h4>
-                        <a class="theme-btn btn-style-one">
+                        <a class="theme-btn btn-style-one" style="color:#efe8e3">
                             <span class="btn-title" data-toggle="modal" data-target="#myModal<?php echo $row['id']; ?>">View Details</span>
                         </a>
                         <ul class="list">

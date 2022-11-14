@@ -20,7 +20,7 @@ if (isset($_POST['submit']))
         // Execute query
         $res = mysqli_query($con, $sql);
         if ($res) {
-            echo "<script>window.location.href='".SITE_URL."admin/press-release/';</script>";
+            echo "<script>window.location.href='".SITEURL."/admin/press-release/';</script>";
             exit;
         }else
         {

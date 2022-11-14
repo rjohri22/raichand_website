@@ -12,7 +12,7 @@ if(isset($_GET['id']))
     
 }
 else {
-    header("location: <?php echo SITE_URL;?>admin/faq/");
+    header("Location:".SITEURL."/admin/faq/");
 }
 
 if (isset($_POST['submit']))
@@ -29,7 +29,7 @@ if (isset($_POST['submit']))
   $row = $con->query($sql);
         if ($row)
          {
-            echo "<script>window.location.href=".SITE_URL."admin/faq/;</script>";
+            echo "<script>window.location.href='".SITEURL."/admin/faq/';</script>";
             exit;
         }else
         {

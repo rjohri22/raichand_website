@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     $row = $con->query($sql);
     if ($row) {
         echo "<script>alert('Data added successfully')</script>";
-        echo "<script>window.location.href='".SITE_URL."admin/policies/';</script>";
+        echo "<script>window.location.href='".SITE_URL."/admin/policies/';</script>";
         // echo "<script>window.location.href=" . SITE_URL . "admin/policies/';</script>";
         // header("location: /admin/policies");
     } else {

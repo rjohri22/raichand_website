@@ -16,7 +16,8 @@ if(isset($_GET['deleteid']))
 		
 		unlink($createDeletePath);
 		
-		header('location: <?php echo SITE_URL;?>admin/press-release/');
+		header("Location:".SITEURL."/admin/press-release/");
+		exit();
 		
 		
 	}

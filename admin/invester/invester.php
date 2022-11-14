@@ -35,7 +35,7 @@ if (isset($_POST['submit']))
 	$row = $con->query($sql);
 	if ($row) 
 	{
-	    header("location :<?php echo SITE_URL;?>admin/invester/");
+	    header("location :".SITE_URL."/admin/invester/");
 	}else
 	{
 		echo "Data not posted". $sql;
