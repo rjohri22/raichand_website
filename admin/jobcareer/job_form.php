@@ -220,7 +220,7 @@
                             <!-- submit data from jobdata_add_db.php -->
                             <div class="form-group mb-4">
                                 <div class="col-sm-12">
-                                <input type="submit" class="form-control btn-success "name="submit" id="submit" value="submit">
+                                <input type="submit" class="btn btn-warning text-white "name="submit" id="submit" value="submit">
                                 </div>
                             </div>
                         </form>
