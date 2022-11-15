@@ -94,6 +94,7 @@ $h = "";
                                                         $folder = SITE_URL."/admin/policies/image/" . $row_policies['filename']; ?>
                                                         <img src="<?= $folder; ?>" style="height:80px; margin-bottom:5px;">     
                                                         <?php
+                                                        
                                                         // }
                                                         //     }
                                                         // }

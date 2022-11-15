@@ -147,6 +147,14 @@ include 'header.php';
     cursor: pointer;
     border: 2px solid #e6e6e6;
 }
+.itemDot
+{
+    animation-name:rotation;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+    transition:all;
+    animation-delay:5s;
+}
         </style>
                 <div class="holderCircle">
                     <div class="round"></div>
