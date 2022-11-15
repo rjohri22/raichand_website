@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
         $row = $con->query($sql);
         if ($row) {
             echo "<script>alert('Category added successfully')</script>";
-            echo "<script>window.location.href='".SITE_URL."admin/policies/categories_list.php';</script>";
+            echo "<script>window.location.href='".SITE_URL."/admin/policies/categories_list.php';</script>";
         }else
         {
 
